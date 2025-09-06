@@ -35,3 +35,17 @@ export const getCollectionById = (id) => {
 export const getAllCollections = () => {
   return collections
 }
+
+// Function to get previous collection
+export const getPreviousCollection = (currentId) => {
+  const currentIndex = collections.findIndex(collection => collection.id === currentId)
+  if (currentIndex <= 0) return null
+  return collections[currentIndex - 1]
+}
+
+// Function to get next collection
+export const getNextCollection = (currentId) => {
+  const currentIndex = collections.findIndex(collection => collection.id === currentId)
+  if (currentIndex === -1 || currentIndex >= collections.length - 1) return null
+  return collections[currentIndex + 1]
+}
