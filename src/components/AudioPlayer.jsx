@@ -61,6 +61,7 @@ const AudioPlayer = ({ verseId, isPlaying, onPlay }) => {
       </button>
       <audio 
         ref={audioRef}
+        id={`audio-${verseId}`}
         className="audio-player"
         controls={false}
         preload="none"
