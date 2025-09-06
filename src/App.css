@@ -1,0 +1,168 @@
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.verses-container {
+  padding: 40px;
+}
+
+.verse-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 12px;
+  border-left: 5px solid #667eea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.verse-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.verse-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.column-header {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #667eea;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.sanskrit-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #8e44ad;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.marathi-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #2980b9;
+  text-align: justify;
+}
+
+.explanation-text {
+  font-size: 1rem;
+  color: #27ae60;
+  font-style: italic;
+  background: #f0f8f0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-left: 3px solid #27ae60;
+  margin-top: 10px;
+}
+
+.audio-controls {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.play-button:hover {
+  background: #5a6fd8;
+}
+
+.play-button.playing {
+  background: #e74c3c;
+}
+
+.audio-player {
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .verse-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .verses-container {
+    padding: 20px;
+  }
+  
+  .sanskrit-text {
+    font-size: 1.2rem;
+  }
+  
+  .marathi-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .App {
+    background: white;
+  }
+  
+  .page-container {
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .verse-item {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
