@@ -22,7 +22,7 @@ const AudioPlayer = ({ verseId, isPlaying, onToggle }) => {
       } else {
         console.log(`Pausing audio for verse ${verseId}, currentTime: ${audioRef.current.currentTime}`)
         audioRef.current.pause()
-        audioRef.current.currentTime = 0
+        // Don't reset currentTime - keep the current position for resume
         setIsLoading(false)
       }
     }
