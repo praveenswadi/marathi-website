@@ -56,41 +56,43 @@ const DynamicVersePage = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const handlePlay = (verseId) => {
-    // If clicking the currently playing verse, pause it
-    if (playingVerse === verseId) {
-      console.log(`Pausing currently playing verse: ${verseId}`)
+  const handleToggle = (verseId, currentlyPlaying) => {
+    console.log(`handleToggle called for verse ${verseId}, currentlyPlaying: ${currentlyPlaying}, playingVerse: ${playingVerse}`)
+    
+    if (currentlyPlaying) {
+      // Currently playing, so pause it
+      console.log(`Pausing verse ${verseId}`)
       setPlayingVerse(null)
       if (isPlayingAll) {
-        // If it was part of "Listen to All", pause the sequence
         setIsPaused(true)
         console.log('Paused "Listen to All" sequence')
       }
-      return
-    }
-
-    // Stop any currently playing audio
-    if (playingVerse) {
-      const currentAudio = document.getElementById(`audio-${playingVerse}`)
-      if (currentAudio) {
-        currentAudio.pause()
-        currentAudio.currentTime = 0
+    } else {
+      // Currently not playing, so play it
+      console.log(`Playing verse ${verseId}`)
+      
+      // Stop any other currently playing audio
+      if (playingVerse && playingVerse !== verseId) {
+        const currentAudio = document.getElementById(`audio-${playingVerse}`)
+        if (currentAudio) {
+          currentAudio.pause()
+          currentAudio.currentTime = 0
+        }
       }
-    }
 
-    if (isPlayingAll) {
-      // If playing all, pause the sequence and play the individual clip
-      setIsPaused(true)
-      console.log('Paused "Listen to All" sequence to play individual verse')
-    }
-    
-    setPlayingVerse(verseId)
-    
-    // Find the index of the clicked verse and set it as next to play
-    const verseIndex = data.verses.findIndex(verse => verse.id === verseId)
-    if (verseIndex !== -1) {
-      setNextVerseToPlay(verseIndex)
-      console.log(`Playing individual verse: ${verseIndex} (verse ${verseId})`)
+      if (isPlayingAll) {
+        setIsPaused(true)
+        console.log('Paused "Listen to All" sequence to play individual verse')
+      }
+      
+      setPlayingVerse(verseId)
+      
+      // Find the index of the clicked verse and set it as next to play
+      const verseIndex = data.verses.findIndex(verse => verse.id === verseId)
+      if (verseIndex !== -1) {
+        setNextVerseToPlay(verseIndex)
+        console.log(`Playing individual verse: ${verseIndex} (verse ${verseId})`)
+      }
     }
   }
 
@@ -321,7 +323,7 @@ const DynamicVersePage = () => {
                   <AudioPlayer 
                     verseId={verse.id}
                     isPlaying={playingVerse === verse.id}
-                    onPlay={() => handlePlay(verse.id)}
+                    onToggle={handleToggle}
                   />
                   <div className={`sanskrit-text ${verse.color || 'purple'}`}>
                     {verse.sanskrit}
