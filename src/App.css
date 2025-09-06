@@ -33,7 +33,6 @@
 
 .verses-container {
   padding: 40px;
-  position: relative;
 }
 
 /* Sticky Headers */
@@ -41,7 +40,7 @@
   position: sticky;
   top: 0;
   background: white;
-  z-index: 10;
+  z-index: 100;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 30px;
@@ -49,6 +48,7 @@
   margin-bottom: 20px;
   border-bottom: 3px solid #667eea;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .sticky-header-left,
@@ -73,6 +73,19 @@
   border-radius: 8px;
   border: 2px solid #8e44ad;
   align-self: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.sticky-header-center.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sticky-header-center.hide {
+  opacity: 0;
+  transform: scale(0.8);
 }
 
 .verse-item {

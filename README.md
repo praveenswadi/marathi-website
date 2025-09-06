@@ -36,6 +36,10 @@ npm run dev
 - User progress tracking
 - Interactive learning features
 
+## TODO
+
+- **Fix sticky headers**: The column headers ("श्लोक" and "श्लोकार्थ") should remain fixed at the top when scrolling, but currently they scroll away with the content. Need to investigate CSS positioning issues.
+
 ## Technology Stack
 
 - React 18

@@ -1,12 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import AudioPlayer from './AudioPlayer'
 
 const VersePage = ({ data }) => {
   const [playingVerse, setPlayingVerse] = useState(null)
+  const [showTitle, setShowTitle] = useState(false)
 
   const handlePlay = (verseId) => {
     setPlayingVerse(playingVerse === verseId ? null : verseId)
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const pageHeader = document.querySelector('.page-header')
+      if (pageHeader) {
+        const headerBottom = pageHeader.offsetTop + pageHeader.offsetHeight
+        setShowTitle(window.scrollY > headerBottom - 100)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <div className="page-container">
@@ -19,7 +33,9 @@ const VersePage = ({ data }) => {
         {/* Sticky Column Headers */}
         <div className="sticky-headers">
           <div className="sticky-header-left">श्लोक</div>
-          <div className="sticky-header-center">{data.title}</div>
+          <div className={`sticky-header-center ${showTitle ? 'show' : 'hide'}`}>
+            {data.title}
+          </div>
           <div className="sticky-header-right">श्लोकार्थ</div>
         </div>
         
