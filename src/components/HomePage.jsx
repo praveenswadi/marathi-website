@@ -27,6 +27,17 @@ const HomePage = () => {
             </div>
           </Link>
         ))}
+        
+        <Link 
+          to="/timing-editor"
+          className="collection-card timing-editor-card"
+        >
+          <div className="collection-content">
+            <h3 className="collection-title">🎵 Audio Timing Editor</h3>
+            <p className="collection-description">Create precise timing for audio verses</p>
+            <div className="collection-arrow">→</div>
+          </div>
+        </Link>
       </div>
     </div>
   )

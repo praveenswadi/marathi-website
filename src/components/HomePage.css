@@ -82,6 +82,24 @@
   transform: translateX(5px);
 }
 
+.timing-editor-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.timing-editor-card .collection-title,
+.timing-editor-card .collection-description {
+  color: white;
+}
+
+.timing-editor-card .collection-arrow {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.timing-editor-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .home-container {

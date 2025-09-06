@@ -1,43 +1,75 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 
 const AudioPlayer = ({ verseId, isPlaying, onPlay }) => {
   const audioRef = useRef(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
     if (audioRef.current) {
       if (isPlaying) {
-        audioRef.current.play()
+        setIsLoading(true)
+        setHasError(false)
+        audioRef.current.play().catch(error => {
+          console.error('Error playing audio:', error)
+          setHasError(true)
+          setIsLoading(false)
+        })
       } else {
         audioRef.current.pause()
         audioRef.current.currentTime = 0
+        setIsLoading(false)
       }
     }
   }, [isPlaying])
 
-  // Placeholder for future audio implementation
   const handlePlay = () => {
     onPlay()
-    // TODO: Add actual audio file loading and word highlighting
     console.log(`Playing audio for verse ${verseId}`)
+  }
+
+  const handleAudioLoad = () => {
+    setIsLoading(false)
+    setHasError(false)
+  }
+
+  const handleAudioError = () => {
+    console.error(`Failed to load audio for verse ${verseId}`)
+    setHasError(true)
+    setIsLoading(false)
+  }
+
+  const handleAudioEnded = () => {
+    setIsLoading(false)
+    // Optionally trigger the onPlay callback to stop the playing state
+    onPlay()
   }
 
   return (
     <div className="audio-controls">
       <button 
-        className={`play-button ${isPlaying ? 'playing' : ''}`}
+        className={`play-button ${isPlaying ? 'playing' : ''} ${hasError ? 'error' : ''}`}
         onClick={handlePlay}
-        title={isPlaying ? 'Pause' : 'Play'}
+        disabled={isLoading}
+        title={
+          hasError ? 'Audio not available' : 
+          isLoading ? 'Loading...' : 
+          isPlaying ? 'Pause' : 'Play'
+        }
       >
-        {isPlaying ? '⏸️' : '▶️'}
+        {hasError ? '❌' : isLoading ? '⏳' : isPlaying ? '⏸️' : '▶️'}
       </button>
       <audio 
         ref={audioRef}
         className="audio-player"
         controls={false}
         preload="none"
+        onLoadedData={handleAudioLoad}
+        onError={handleAudioError}
+        onEnded={handleAudioEnded}
       >
-        {/* Audio source will be added when audio files are available */}
         <source src={`/audio/verse-${verseId}.mp3`} type="audio/mpeg" />
+        <source src={`/audio/verse-${verseId}.m4a`} type="audio/mp4" />
         Your browser does not support the audio element.
       </audio>
     </div>
