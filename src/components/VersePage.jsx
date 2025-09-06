@@ -16,10 +16,16 @@ const VersePage = ({ data }) => {
       </div>
       
       <div className="verses-container">
+        {/* Sticky Column Headers */}
+        <div className="sticky-headers">
+          <div className="sticky-header-left">श्लोक</div>
+          <div className="sticky-header-center">{data.title}</div>
+          <div className="sticky-header-right">श्लोकार्थ</div>
+        </div>
+        
         {data.verses.map((verse) => (
           <div key={verse.id} className="verse-item">
             <div className="verse-column">
-              <h3 className="column-header">श्लोक</h3>
               <div className="sanskrit-text">
                 {verse.sanskrit}
               </div>
@@ -36,7 +42,6 @@ const VersePage = ({ data }) => {
             </div>
             
             <div className="verse-column">
-              <h3 className="column-header">श्लोकार्थ</h3>
               <div className="marathi-text">
                 {verse.marathi}
               </div>
