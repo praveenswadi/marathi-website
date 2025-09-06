@@ -106,6 +106,12 @@
   gap: 15px;
 }
 
+.sanskrit-text-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
 .column-header {
   font-size: 1.3rem;
   font-weight: 600;
@@ -142,34 +148,47 @@
 }
 
 .audio-controls {
-  margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .play-button {
-  background: #667eea;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  padding: 8px;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: background 0.2s ease;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .play-button:hover {
-  background: #5a6fd8;
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: scale(1.05);
 }
 
 .play-button.playing {
-  background: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+  border-color: rgba(231, 76, 60, 0.3);
+}
+
+.play-button.playing:hover {
+  background: rgba(231, 76, 60, 0.2);
+  border-color: rgba(231, 76, 60, 0.5);
 }
 
 .audio-player {
-  flex: 1;
-  max-width: 300px;
+  display: none;
 }
 
 /* Responsive Design */

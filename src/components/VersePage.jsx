@@ -42,19 +42,21 @@ const VersePage = ({ data }) => {
         {data.verses.map((verse) => (
           <div key={verse.id} className="verse-item">
             <div className="verse-column">
-              <div className="sanskrit-text">
-                {verse.sanskrit}
+              <div className="sanskrit-text-container">
+                <AudioPlayer 
+                  verseId={verse.id}
+                  isPlaying={playingVerse === verse.id}
+                  onPlay={() => handlePlay(verse.id)}
+                />
+                <div className="sanskrit-text">
+                  {verse.sanskrit}
+                </div>
               </div>
               {verse.explanation && (
                 <div className="explanation-text">
                   {verse.explanation}
                 </div>
               )}
-              <AudioPlayer 
-                verseId={verse.id}
-                isPlaying={playingVerse === verse.id}
-                onPlay={() => handlePlay(verse.id)}
-              />
             </div>
             
             <div className="verse-column">

@@ -26,8 +26,9 @@ const AudioPlayer = ({ verseId, isPlaying, onPlay }) => {
       <button 
         className={`play-button ${isPlaying ? 'playing' : ''}`}
         onClick={handlePlay}
+        title={isPlaying ? 'Pause' : 'Play'}
       >
-        {isPlaying ? '⏸️ Pause' : '▶️ Play'}
+        {isPlaying ? '⏸️' : '▶️'}
       </button>
       <audio 
         ref={audioRef}
