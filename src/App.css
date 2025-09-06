@@ -158,6 +158,15 @@
   box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
 }
 
+.listen-all-btn.paused {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  box-shadow: 0 2px 8px rgba(243, 156, 18, 0.3);
+}
+
+.listen-all-btn.paused:hover {
+  box-shadow: 0 4px 12px rgba(243, 156, 18, 0.4);
+}
+
 .sticky-header-center {
   font-family: 'Tiro Devanagari Sanskrit', serif;
   font-size: 1.2rem;

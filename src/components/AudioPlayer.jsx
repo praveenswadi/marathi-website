@@ -41,8 +41,8 @@ const AudioPlayer = ({ verseId, isPlaying, onPlay }) => {
 
   const handleAudioEnded = () => {
     setIsLoading(false)
-    // Optionally trigger the onPlay callback to stop the playing state
-    onPlay()
+    // Don't trigger onPlay here - let the parent handle sequence logic
+    console.log(`Audio ended for verse ${verseId}`)
   }
 
   return (

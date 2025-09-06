@@ -5,51 +5,96 @@ const VersePage = ({ data }) => {
   const [playingVerse, setPlayingVerse] = useState(null)
   const [showTitle, setShowTitle] = useState(false)
   const [isPlayingAll, setIsPlayingAll] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
   const [currentPlayingIndex, setCurrentPlayingIndex] = useState(0)
+  const [nextVerseToPlay, setNextVerseToPlay] = useState(0)
 
   const handlePlay = (verseId) => {
-    if (isPlayingAll) {
-      // If playing all, stop the sequence
-      setIsPlayingAll(false)
+    // If clicking the currently playing verse, pause it
+    if (playingVerse === verseId) {
+      console.log(`Pausing currently playing verse: ${verseId}`)
       setPlayingVerse(null)
-      setCurrentPlayingIndex(0)
-    } else {
-      setPlayingVerse(playingVerse === verseId ? null : verseId)
+      if (isPlayingAll) {
+        // If it was part of "Listen to All", pause the sequence
+        setIsPaused(true)
+        console.log('Paused "Listen to All" sequence')
+      }
+      return
+    }
+
+    // Stop any currently playing audio
+    if (playingVerse) {
+      const currentAudio = document.getElementById(`audio-${playingVerse}`)
+      if (currentAudio) {
+        currentAudio.pause()
+        currentAudio.currentTime = 0
+      }
+    }
+
+    if (isPlayingAll) {
+      // If playing all, pause the sequence and play the individual clip
+      setIsPaused(true)
+      console.log('Paused "Listen to All" sequence to play individual verse')
+    }
+    
+    setPlayingVerse(verseId)
+    
+    // Find the index of the clicked verse and set it as next to play
+    const verseIndex = data.verses.findIndex(verse => verse.id === verseId)
+    if (verseIndex !== -1) {
+      setNextVerseToPlay(verseIndex)
+      console.log(`Playing individual verse: ${verseIndex} (verse ${verseId})`)
     }
   }
 
   const handleListenToAll = () => {
-    console.log('Listen to All clicked, current state:', { isPlayingAll, data: !!data })
+    console.log('Listen to All clicked, current state:', { isPlayingAll, isPaused, data: !!data })
     
-    if (isPlayingAll) {
-      // Stop playing all
-      console.log('Stopping play all')
-      setIsPlayingAll(false)
+    if (isPlayingAll && !isPaused) {
+      // Pause playing all
+      console.log('Pausing play all')
+      setIsPaused(true)
       setPlayingVerse(null)
-      setCurrentPlayingIndex(0)
+    } else if (isPlayingAll && isPaused) {
+      // Resume playing all
+      console.log('Resuming play all from index:', nextVerseToPlay)
+      setIsPaused(false)
+      playNextVerse(nextVerseToPlay)
     } else {
       // Start playing all
-      console.log('Starting play all')
+      console.log('Starting play all from index:', nextVerseToPlay)
       setIsPlayingAll(true)
-      setCurrentPlayingIndex(0)
+      setIsPaused(false)
+      setCurrentPlayingIndex(nextVerseToPlay)
     }
   }
 
-  // Effect to start playing when isPlayingAll becomes true
+  // Effect to start playing when isPlayingAll becomes true and not paused
   useEffect(() => {
-    if (isPlayingAll && data) {
-      console.log('isPlayingAll is true, starting to play verses')
-      playNextVerse(0)
+    if (isPlayingAll && !isPaused && data) {
+      console.log('isPlayingAll is true and not paused, starting to play verses from index:', nextVerseToPlay)
+      playNextVerse(nextVerseToPlay)
     }
-  }, [isPlayingAll, data])
+  }, [isPlayingAll, isPaused, data, nextVerseToPlay])
 
   const playNextVerse = (index) => {
-    if (!data || !isPlayingAll || index >= data.verses.length) {
+    if (!data || index >= data.verses.length) {
       // Finished playing all verses
-      console.log('Finished playing all verses or stopped')
-      setIsPlayingAll(false)
+      if (index >= data.verses.length) {
+        console.log('Finished playing all verses')
+        setIsPlayingAll(false)
+        setIsPaused(false)
+        setPlayingVerse(null)
+        setCurrentPlayingIndex(0)
+        setNextVerseToPlay(0)
+      }
+      return
+    }
+
+    // If not playing all or paused, don't continue the sequence
+    if (!isPlayingAll || isPaused) {
+      console.log('Not playing all or paused, stopping sequence')
       setPlayingVerse(null)
-      setCurrentPlayingIndex(0)
       return
     }
 
@@ -57,9 +102,20 @@ const VersePage = ({ data }) => {
     console.log(`Playing verse ${index + 1}/${data.verses.length}: ${verse.id}`)
     setPlayingVerse(verse.id)
     setCurrentPlayingIndex(index)
+    setNextVerseToPlay(index)
 
     // Scroll to the current verse
     scrollToVerse(verse.id)
+
+    // Preload next verse for seamless transition
+    if (index + 1 < data.verses.length) {
+      const nextVerse = data.verses[index + 1]
+      const nextAudioElement = document.getElementById(`audio-${nextVerse.id}`)
+      if (nextAudioElement) {
+        nextAudioElement.preload = 'auto'
+        console.log(`Preloading next verse: ${nextVerse.id}`)
+      }
+    }
 
     // Wait a bit for the DOM to update, then look for the audio element
     setTimeout(() => {
@@ -72,12 +128,14 @@ const VersePage = ({ data }) => {
         // Clear any existing onended handlers
         audioElement.onended = null
         
-        // Set up the new handler
+        // Set up the new handler with preloading
         audioElement.onended = () => {
           console.log(`Verse ${verse.id} ended, playing next...`)
           // Play next verse after a short delay
           setTimeout(() => {
-            playNextVerse(index + 1)
+            if (!isPaused) { // Check if not paused before playing next
+              playNextVerse(index + 1)
+            }
           }, 500)
         }
         
@@ -89,7 +147,9 @@ const VersePage = ({ data }) => {
           console.error('Error playing audio:', error)
           // If there's an error, move to next verse
           setTimeout(() => {
-            playNextVerse(index + 1)
+            if (!isPaused) {
+              playNextVerse(index + 1)
+            }
           }, 1000)
         })
       } else {
@@ -97,7 +157,9 @@ const VersePage = ({ data }) => {
         console.log('Available audio elements:', document.querySelectorAll('audio'))
         // If audio element not found, move to next verse
         setTimeout(() => {
-          playNextVerse(index + 1)
+          if (!isPaused) {
+            playNextVerse(index + 1)
+          }
         }, 1000)
       }
     }, 200) // Wait 200ms for DOM to update
@@ -143,11 +205,18 @@ const VersePage = ({ data }) => {
           <div className="sticky-header-left">
             <span>श्लोक</span>
             <button 
-              className={`listen-all-btn ${isPlayingAll ? 'playing' : ''}`}
+              className={`listen-all-btn ${isPlayingAll ? (isPaused ? 'paused' : 'playing') : ''}`}
               onClick={handleListenToAll}
-              title={isPlayingAll ? 'Stop playing all verses' : 'Play all verses sequentially'}
+              title={
+                isPlayingAll 
+                  ? (isPaused ? 'Resume playing all verses' : 'Pause playing all verses')
+                  : 'Play all verses sequentially'
+              }
             >
-              {isPlayingAll ? '⏹️ Stop All' : '▶️ Listen to All'}
+              {isPlayingAll 
+                ? (isPaused ? '▶️ Resume All' : '⏸️ Pause All')
+                : '▶️ Listen to All'
+              }
             </button>
           </div>
           <div className={`sticky-header-center ${showTitle ? 'show' : 'hide'}`}>
