@@ -7,6 +7,12 @@ export const collections = [
     filename: 'atharvashirsha.json'
   },
   {
+    id: 'atharvashirsha-phalashruti',
+    title: 'अथर्वशीर्षाची फलश्रुति',
+    description: 'Benefits of reciting Atharvashirsha',
+    filename: 'atharvashirsha-phalashruti.json'
+  },
+  {
     id: 'gayatri',
     title: 'गायत्री मंत्र',
     description: 'The sacred Gayatri Mantra',
