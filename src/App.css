@@ -53,8 +53,9 @@
 
 .sticky-header-left,
 .sticky-header-right {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #667eea;
   text-align: center;
   padding: 10px;
@@ -64,6 +65,7 @@
 }
 
 .sticky-header-center {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: #8e44ad;
@@ -122,21 +124,26 @@
 }
 
 .sanskrit-text {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
   font-size: 1.4rem;
   line-height: 1.8;
   color: #8e44ad;
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
+  font-style: italic;
 }
 
 .marathi-text {
+  font-family: 'Tiro Devanagari Marathi', serif;
   font-size: 1.2rem;
   line-height: 1.7;
   color: #2980b9;
   text-align: justify;
+  font-weight: 400;
 }
 
 .explanation-text {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
   font-size: 1rem;
   color: #27ae60;
   font-style: italic;
@@ -145,6 +152,7 @@
   border-radius: 6px;
   border-left: 3px solid #27ae60;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .audio-controls {
