@@ -48,7 +48,7 @@ const VersePage = ({ data }) => {
                   isPlaying={playingVerse === verse.id}
                   onPlay={() => handlePlay(verse.id)}
                 />
-                <div className="sanskrit-text">
+                <div className={`sanskrit-text ${verse.color || 'purple'}`}>
                   {verse.sanskrit}
                 </div>
               </div>

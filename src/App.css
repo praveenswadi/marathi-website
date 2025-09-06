@@ -85,10 +85,10 @@
   padding: 40px 40px 40px 60px;
   background: #fefcf5;
   background-image: 
-    radial-gradient(circle at 0 30px, rgba(200, 180, 140, 0.4) 1px, transparent 1px),
-    radial-gradient(circle at 0 30px, rgba(200, 180, 140, 0.4) 1px, transparent 1px);
-  background-size: 20px 30px, 20px 30px;
-  background-position: 0 0, 10px 15px;
+    linear-gradient(to right, rgba(200, 180, 140, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 180, 140, 0.1) 1px, transparent 1px);
+  background-size: 100% 30px, 100% 30px;
+  background-position: 0 0, 0 0;
   position: relative;
   min-height: 100vh;
   z-index: 2;
@@ -183,13 +183,42 @@
 }
 
 .verse-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
   gap: 30px;
-  padding: 30px 0;
-  border-bottom: 1px solid rgba(200, 180, 140, 0.2);
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(200, 180, 140, 0.1);
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+/* Verse numbers - only show when explicitly enabled with show-numbers class */
+.verse-item.show-numbers::before {
+  content: attr(data-verse-id);
+  position: absolute;
+  left: -35px;
+  top: 20px;
+  font-size: 0.9rem;
+  color: rgba(200, 180, 140, 0.6);
+  font-weight: 600;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  width: 20px;
+  text-align: center;
+}
+
+/* Devanagari number styling for any numbers that appear */
+.devanagari-number {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-variant-numeric: lining-nums;
+}
+
+.verse-item:hover {
+  background: rgba(248, 249, 255, 0.6);
+  border-radius: 8px;
+  margin: 0 10px;
+  padding: 20px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .verse-item:last-child {
@@ -201,6 +230,7 @@
   flex-direction: column;
   gap: 15px;
   position: relative;
+  padding: 10px 0;
 }
 
 .verse-column::before {
@@ -240,15 +270,38 @@
   font-family: 'Tiro Devanagari Sanskrit', serif;
   font-size: 1.4rem;
   line-height: 1.8;
-  color: #8e44ad;
   font-weight: 400;
   text-align: justify;
   font-style: italic;
   position: relative;
-  padding-top: 5px;
+  padding: 8px 0;
   text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.1);
   z-index: 2;
-  background: rgba(254, 252, 245, 0.8);
+}
+
+/* Dynamic color classes for Sanskrit text */
+.sanskrit-text.purple {
+  color: #8e44ad;
+}
+
+.sanskrit-text.blue {
+  color: #2980b9;
+}
+
+.sanskrit-text.green {
+  color: #27ae60;
+}
+
+.sanskrit-text.red {
+  color: #e74c3c;
+}
+
+.sanskrit-text.orange {
+  color: #f39c12;
+}
+
+.sanskrit-text.teal {
+  color: #1abc9c;
 }
 
 .marathi-text {
@@ -259,10 +312,9 @@
   text-align: justify;
   font-weight: 400;
   position: relative;
-  padding-top: 5px;
+  padding: 8px 0;
   text-shadow: 0.3px 0.3px 0px rgba(0, 0, 0, 0.05);
   z-index: 2;
-  background: rgba(254, 252, 245, 0.8);
 }
 
 .explanation-text {
@@ -335,7 +387,7 @@
   }
   
   .verse-item {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 20px;
   }
   
