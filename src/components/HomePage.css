@@ -122,6 +122,27 @@
   transform: translateY(-5px) scale(1.02);
 }
 
+/* Simple manuscript link styles */
+.manuscript-link-inline {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.manuscript-link-simple {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.manuscript-link-simple:hover {
+  color: #5a67d8;
+  text-decoration: underline;
+}
+
 
 
 

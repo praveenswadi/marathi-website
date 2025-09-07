@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllCollections } from '../data/index'
+import { hasManuscripts } from '../utils/manuscriptUtils'
 import './HomePage.css'
 
 const HomePage = () => {
   const collections = getAllCollections()
+  const [manuscriptAvailability, setManuscriptAvailability] = useState({})
+
+  useEffect(() => {
+    const checkManuscripts = async () => {
+      const availability = {}
+      for (const collection of collections) {
+        availability[collection.id] = await hasManuscripts(collection.id)
+      }
+      setManuscriptAvailability(availability)
+    }
+    checkManuscripts()
+  }, [collections])
 
   return (
     <div className="home-container">
@@ -24,6 +37,18 @@ const HomePage = () => {
               <h3 className="collection-title">{collection.title}</h3>
               <p className="collection-description">{collection.description}</p>
               <div className="collection-arrow">→</div>
+              {manuscriptAvailability[collection.id] && (
+                <div className="manuscript-link-inline">
+                  <Link 
+                    to={`/manuscripts/${collection.id}`}
+                    className="manuscript-link-simple"
+                    title="View original manuscript"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Manuscript
+                  </Link>
+                </div>
+              )}
             </div>
           </Link>
         ))}
