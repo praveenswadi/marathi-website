@@ -1,27 +1,57 @@
 {
-  "title": "अथर्वशीर्ष",
-  "description": "Original manuscript of Atharvashirsha",
+  "collection": "atharvashirsha",
+  "title": "Atharvashirsha Manuscript Images",
+  "description": "Original manuscript pages for atharvashirsha",
   "images": [
     {
-      "id": "atharvashirsha-01",
-      "title": "Page 1",
-      "description": "Beginning of Atharvashirsha",
+      "id": 1,
       "filename": "atharvashirsha-01.jpg",
-      "url": "/manuscripts/atharvashirsha/atharvashirsha-01.jpg"
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-01.jpg",
+      "title": "Manuscript Page 1",
+      "description": "Original manuscript page 1 - atharvashirsha-01.jpg"
     },
     {
-      "id": "atharvashirsha-02", 
-      "title": "Page 2",
-      "description": "Continuation of Atharvashirsha",
+      "id": 2,
       "filename": "atharvashirsha-02.jpg",
-      "url": "/manuscripts/atharvashirsha/atharvashirsha-02.jpg"
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-02.jpg",
+      "title": "Manuscript Page 2",
+      "description": "Original manuscript page 2 - atharvashirsha-02.jpg"
     },
     {
-      "id": "atharvashirsha-03",
-      "title": "Page 3", 
-      "description": "Final page of Atharvashirsha",
+      "id": 3,
       "filename": "atharvashirsha-03.jpg",
-      "url": "/manuscripts/atharvashirsha/atharvashirsha-03.jpg"
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-03.jpg",
+      "title": "Manuscript Page 3",
+      "description": "Original manuscript page 3 - atharvashirsha-03.jpg"
+    },
+    {
+      "id": 4,
+      "filename": "atharvashirsha-04.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-04.jpg",
+      "title": "Manuscript Page 4",
+      "description": "Original manuscript page 4 - atharvashirsha-04.jpg"
+    },
+    {
+      "id": 5,
+      "filename": "atharvashirsha-05.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-05.jpg",
+      "title": "Manuscript Page 5",
+      "description": "Original manuscript page 5 - atharvashirsha-05.jpg"
+    },
+    {
+      "id": 6,
+      "filename": "atharvashirsha-06.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-06.jpg",
+      "title": "Manuscript Page 6",
+      "description": "Original manuscript page 6 - atharvashirsha-06.jpg"
+    },
+    {
+      "id": 7,
+      "filename": "atharvashirsha-07.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-07.jpg",
+      "title": "Manuscript Page 7",
+      "description": "Original manuscript page 7 - atharvashirsha-07.jpg"
     }
-  ]
+  ],
+  "generatedAt": "2025-09-07T03:45:00.202Z"
 }

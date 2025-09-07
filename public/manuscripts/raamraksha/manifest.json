@@ -1,20 +1,99 @@
 {
-  "title": "रामरक्षा",
-  "description": "Original manuscript of Raamraksha Stotra",
+  "collection": "raamraksha",
+  "title": "Raamraksha Manuscript Images",
+  "description": "Original manuscript pages for raamraksha",
   "images": [
     {
-      "id": "raamraksha-01",
-      "title": "Page 1",
-      "description": "Beginning of Raamraksha Stotra",
-      "filename": "raamraksha-01.jpg",
-      "url": "/manuscripts/raamraksha/raamraksha-01.jpg"
+      "id": 1,
+      "filename": "IMG_2893 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2893 Large.jpeg",
+      "title": "Manuscript Page 1",
+      "description": "Original manuscript page 1 - IMG_2893 Large.jpeg"
     },
     {
-      "id": "raamraksha-02",
-      "title": "Page 2", 
-      "description": "Continuation of Raamraksha Stotra",
-      "filename": "raamraksha-02.jpg",
-      "url": "/manuscripts/raamraksha/raamraksha-02.jpg"
+      "id": 2,
+      "filename": "IMG_2894 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2894 Large.jpeg",
+      "title": "Manuscript Page 2",
+      "description": "Original manuscript page 2 - IMG_2894 Large.jpeg"
+    },
+    {
+      "id": 3,
+      "filename": "IMG_2895 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2895 Large.jpeg",
+      "title": "Manuscript Page 3",
+      "description": "Original manuscript page 3 - IMG_2895 Large.jpeg"
+    },
+    {
+      "id": 4,
+      "filename": "IMG_2896 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2896 Large.jpeg",
+      "title": "Manuscript Page 4",
+      "description": "Original manuscript page 4 - IMG_2896 Large.jpeg"
+    },
+    {
+      "id": 5,
+      "filename": "IMG_2897 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2897 Large.jpeg",
+      "title": "Manuscript Page 5",
+      "description": "Original manuscript page 5 - IMG_2897 Large.jpeg"
+    },
+    {
+      "id": 6,
+      "filename": "IMG_2898 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2898 Large.jpeg",
+      "title": "Manuscript Page 6",
+      "description": "Original manuscript page 6 - IMG_2898 Large.jpeg"
+    },
+    {
+      "id": 7,
+      "filename": "IMG_2899 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2899 Large.jpeg",
+      "title": "Manuscript Page 7",
+      "description": "Original manuscript page 7 - IMG_2899 Large.jpeg"
+    },
+    {
+      "id": 8,
+      "filename": "IMG_2900 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2900 Large.jpeg",
+      "title": "Manuscript Page 8",
+      "description": "Original manuscript page 8 - IMG_2900 Large.jpeg"
+    },
+    {
+      "id": 9,
+      "filename": "IMG_2901 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2901 Large.jpeg",
+      "title": "Manuscript Page 9",
+      "description": "Original manuscript page 9 - IMG_2901 Large.jpeg"
+    },
+    {
+      "id": 10,
+      "filename": "IMG_2902 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2902 Large.jpeg",
+      "title": "Manuscript Page 10",
+      "description": "Original manuscript page 10 - IMG_2902 Large.jpeg"
+    },
+    {
+      "id": 11,
+      "filename": "IMG_2903 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2903 Large.jpeg",
+      "title": "Manuscript Page 11",
+      "description": "Original manuscript page 11 - IMG_2903 Large.jpeg"
+    },
+    {
+      "id": 12,
+      "filename": "IMG_2904 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2904 Large.jpeg",
+      "title": "Manuscript Page 12",
+      "description": "Original manuscript page 12 - IMG_2904 Large.jpeg"
+    },
+    {
+      "id": 13,
+      "filename": "IMG_2905 Large.jpeg",
+      "url": "/manuscripts/raamraksha/IMG_2905 Large.jpeg",
+      "title": "Manuscript Page 13",
+      "description": "Original manuscript page 13 - IMG_2905 Large.jpeg"
     }
-  ]
+  ],
+  "generatedAt": "2025-09-07T03:45:04.016Z"
 }
