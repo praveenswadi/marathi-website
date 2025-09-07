@@ -1,0 +1,15 @@
+{
+  "collection": "atharvashirsha",
+  "title": "Atharvashirsha Manuscript Images",
+  "description": "Original manuscript pages for Atharvashirsha",
+  "images": [
+    {
+      "id": 1,
+      "filename": "example-page-1.jpg",
+      "url": "/manuscripts/atharvashirsha/example-page-1.jpg",
+      "title": "Manuscript Page 1",
+      "description": "First page of the original manuscript"
+    }
+  ],
+  "generatedAt": "2024-01-01T00:00:00.000Z"
+}
