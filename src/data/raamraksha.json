@@ -392,6 +392,102 @@
       "english": "O Shri Rama, delight of the Raghu dynasty, O Shri Rama, elder brother of Bharata, O Shri Rama, fierce in battle, be our protector, O Rama.",
       "explanation": "",
       "color": "purple"
+    },
+    {
+      "id": 50,
+      "sanskrit": "श्रीरामचंद्रचरणौ मनसा स्मरामि ।\nश्रीरामचंद्रचरणौ वचसा गृणामि ।\nश्रीरामचंद्रचरणौ शिरसा नमामि ।\nश्रीरामचंद्रचरणौ शरणं प्रपद्ये ॥",
+      "marathi": "मी श्रीरामचंद्रांच्या चरणांचे मनाने स्मरण करतो.\nमी श्रीरामचंद्राच्या चरणांचे वाणीने स्तवन करतो.\nमी श्रीरामचंद्रांच्या चरणी मस्तक ठेवून नमस्कार करतो.\nमी श्रीरामचंद्रांच्या चरणी शरण आलो आहे.",
+      "english": "I remember the feet of Shri Ramachandra with my mind.\nI praise the feet of Shri Ramachandra with my speech.\nI bow my head to the feet of Shri Ramachandra.\nI take refuge at the feet of Shri Ramachandra.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 51,
+      "sanskrit": "माता रामो मपिता रामचंद्रः ।\nस्वामी रामो मत्सखा रामचंद्रः ।\nसर्वस्वं मे रामचंद्रो दयालुर्नान्यं जाने नैव जाने न जाने।।",
+      "marathi": "माझी माता व माझा पिता रामचंद्र आहे.\nमाझा स्वामी व माझा मित्र रामचंद्र आहे.\nफार काय माझे सर्वस्वच हा दयाळू रामचंद्र आहे.\nदुसऱ्या कोणाला मी जाणत नाहीं. मुळीच जाणत नाहीं. अगदी खरेच जाणत नाहीं !!",
+      "english": "My mother and father is Ramachandra.\nMy lord and my friend is Ramachandra.\nMy everything is this compassionate Ramachandra.\nI know no other. I truly know no other. I absolutely know no other!",
+      "explanation": "[दयालुर्नान्यं = दयालुः + न + अन्यम्] [नैव = न + एव]",
+      "color": "purple"
+    },
+    {
+      "id": 52,
+      "sanskrit": "दक्षिणे लक्ष्मणो यस्ये वामे तु जनकात्मजा ।\nपुरतो मारुतिर्यस्य तं वन्दे रघुनन्दनम् ॥",
+      "marathi": "ज्याच्या (यस्य) उजव्या बाजुला (दक्षिणे) लक्ष्मण आहे व डाव्या बाजुला (वामे) जनकतनय। सीता आहे व ज्याच्यापुढे (पुरतो) मारुति आहे, त्या (तं) रघुनन्दनाला मी वन्दन करतो.",
+      "english": "I bow to Raghunandana, who has Lakshmana on his right side, Janaka's daughter Sita on his left side, and Maruti (Hanuman) in front of him.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 53,
+      "sanskrit": "लोकाभिरामं रणरंगधीरं राजीवनेत्र\nरघुवंशनाथम्। कारुणरूपं करुणाकरं तं श्रीराम-\nचंद्र शरणं प्रपद्ये ॥",
+      "marathi": "लोकांना आनंद देणारा, रणांगणी धीर धरणारा, कमलाप्रमाणे नेत्र असलेला, रघुवंशाचा अधिपति, दयेची मूर्ति (कारुण्यरूप) असा जो करुणासागर श्रीरामचंद्र, त्याला मी शरण आलो आहे.",
+      "english": "I take refuge in Shri Ramachandra, who brings joy to the world, who is brave in battle, who has lotus-like eyes, who is the lord of the Raghu dynasty, who is the embodiment of compassion.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 54,
+      "sanskrit": "मनोजवं मारुततुल्यने गं जितेंद्रिय बुद्धिमता\nवरिष्ठ । वातात्मजं वानरयूथमुख्यं श्रीरामदूत\nशरणं प्रपद्ये ॥",
+      "marathi": "मनाच्या वेगाप्रमाणे गमन करणारा, वाऱ्याप्रमा णे वेगवान, आपली इंद्रिये जिंकणारा, बुद्धिवंतात श्रेष्ठ, आणि वानरसमुदायाचा मुख्य अशा वायुपुत्र श्रीरामदूत हनुमंताला मी शरण आलो आहे.",
+      "english": "I take refuge in Shri Ram's messenger Hanuman, who moves with the speed of mind, who is as fast as wind, who has conquered his senses, who is the best among the wise, and who is the chief of the monkey army.",
+      "explanation": "(यूथम = टोळी, समूह)",
+      "color": "purple"
+    },
+    {
+      "id": 55,
+      "sanskrit": "कूजन्तं रामरामेति मधुरं मधुराक्षरम् ।\nआरुह्य कविताशाखां वन्दे वाल्मिकीकोकिलम् ॥",
+      "marathi": "कवितेच्या फांदीवर बसून (आरुह्य) \"राम, राम\" अशा गोड-गोड अक्षरांचे कूजन करणाऱ्या वाल्मिकीरूपी कोकिळेला मी वन्दन करतो.",
+      "english": "I bow to Valmiki, the cuckoo who, sitting on the branch of poetry, sings sweetly with the sweet syllables 'Rama, Rama'.",
+      "explanation": "[रामरामेति = राम + राम + इति]",
+      "color": "purple"
+    },
+    {
+      "id": 56,
+      "sanskrit": "आपदामपहर्तारं दातारं सर्वसंपदाम् ।\nलोकाभिरामं श्रीरामं भूयो भूयो नमाम्यहम् ॥",
+      "marathi": "आपत्तींचा नाश करणारा, सर्व संपत्ती देणारा (दातारं) व लोकांना [पुनः पुनः (=भूयो)] आनंद देणारा असा श्रीराम, त्याला मी पुनः पुनः नमस्कार करतो.",
+      "english": "I bow again and again to Shri Rama, who destroys calamities, who gives all wealth, and who brings joy to the world.",
+      "explanation": "[आपदाम् + अपहर्तारं] [नमामि + अहम्]",
+      "color": "purple"
+    },
+    {
+      "id": 57,
+      "sanskrit": "भर्जनं भवबीजानामर्जनं सुखसंपदाम् ।\nतर्जनं यमदूतानां रामरामेति गर्जनम् ॥",
+      "marathi": "'राम राम' अशी गर्जना ही संसाराची (भव) बीजे भाजून टाकणारी, सुखसंपत्ती प्राप्त करून देणारी (अर्जन) आणि यमाच्या दूतांना भय दाखवणारी अशी आहे.",
+      "english": "The chanting of 'Rama Rama' is that which roasts the seeds of worldly existence, which brings the acquisition of happiness and wealth, and which frightens the messengers of Yama.",
+      "explanation": "[भवबीजानाम्+अर्जनं]; तर्जनं = भयावह;",
+      "color": "purple"
+    },
+    {
+      "id": 58,
+      "sanskrit": "रामो राजमणिः सदा विजयते राम रमेशं भजे।\nरामेणामिहता निशाचरचमू रामाय तस्मै नमः ॥",
+      "marathi": "राजश्रेष्ठ (राजमणि) राम नेहमी विजयी होतो. त्या सीतापती रामास मी भजतो. रामाने (रामेण) राक्षसांची (निशाचर) सेना (चमू) मारली (अभिहिता), त्या रामाला माझा नमस्कार असो.",
+      "english": "Rama, the jewel among kings, always wins. I worship Rama, the lord of Rama (Sita). The army of demons was killed by Rama. Salutations to that Rama.",
+      "explanation": "[रमेश = रमा+ईश]; [या स्तोत्रात रमा = सीता]",
+      "color": "purple"
+    },
+    {
+      "id": 59,
+      "sanskrit": "रामान्नास्ति परायणं परतरं रामस्य दासोऽस्म्यहं ।\nरामे चित्तलयः सदा भवतु मे भो राम मामुद्धर ॥",
+      "marathi": "मला रामाहून (रामात्) दुसरा (परायण) कोणी श्रेष्ठ (परतर) वाटत नाही. मी रामत्या दास आहे (अस्मि अहम्). माझ्या (मे) चित्ताचा चित्ताचा लय नेहमी रामाचे ठाई असो. हे रामा (भो राम) माझा तू उद्धार कर. (माम् + उद्धर).",
+      "english": "There is no refuge other than Rama, nothing superior to Rama. I am Rama's servant. May my mind always be absorbed in Rama. O Rama, please save me.",
+      "explanation": "[रामान्नास्ति = रामात्+न+अस्ति] [दासोऽस्म्यहं = दासः + अस्मि + अहं] [मामुद्धर = माम् + उद्धर]",
+      "color": "purple"
+    },
+    {
+      "id": 60,
+      "sanskrit": "रामरामेति रामेति रमे रामे मनोरमे।\nसहस्रनाम तत्तुल्यं रामनाम वरानने ॥",
+      "marathi": "शिव पार्वतीला सांगतात - \"हे मनोरमे, \"राम-राम-राम\" (रामरामेति रामेति) अशा रामोचाराने मनाला आनंद देणाऱ्या श्रीरामाच्या ठाई (रामे), मी रममाण (रमे) होतो: श्रीरामाचे नांव (रामनाम) हे विष्णू-सहस्रनामाशी बरोबरी (तत् तुल्यं) करणारे आहे.\"",
+      "english": "Shiva tells Parvati: \"O Manorama, by chanting 'Rama-Rama-Rama' (Ramarameti Rameti), I delight in Shri Rama, who brings joy to the mind. The name of Shri Rama (Ramanama) is equivalent to Vishnu Sahasranama.\"",
+      "explanation": "[रामरामेति = राम राम इति;] [तत्तुल्यं = तत् + तुल्यम्]",
+      "color": "purple"
+    },
+    {
+      "id": 61,
+      "sanskrit": "इति श्रीबुधकौशिक विरचित\nश्रीरामरक्षास्तोत्र संपूर्णम् ॥\nश्रीरामचंद्रार्पणमस्तु ॥",
+      "marathi": "याप्रमाणे बुधकौशिक ऋषिनी रचलेले (विरचितं) श्रीरामरक्षास्तोत्र समाप्त झाले. ते श्रीरामचंद्रांच्या चरणी अर्पण असो.",
+      "english": "Thus ends the Shri Ram Raksha Stotra composed by Sage Budhakaushika. May it be offered at the feet of Shri Ramachandra.",
+      "explanation": "",
+      "color": "purple"
     }
   ]
 }
