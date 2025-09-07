@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCollectionById, getPreviousCollection, getNextCollection } from '../data/index'
 import { loadCollectionData } from '../data/loader'
+import { hasAudioForVerse, hasAudioForCollection } from '../utils/audioUtils'
 import AudioPlayer from './AudioPlayer'
 import '../App.css'
 
@@ -277,20 +278,22 @@ const DynamicVersePage = () => {
           <div className="sticky-headers">
             <div className="sticky-header-left">
               <span>श्लोक</span>
-              <button 
-                className={`listen-all-btn ${isPlayingAll ? (isPaused ? 'paused' : 'playing') : ''}`}
-                onClick={handleListenToAll}
-                title={
-                  isPlayingAll 
-                    ? (isPaused ? 'Resume playing all verses' : 'Pause playing all verses')
-                    : 'Play all verses sequentially'
-                }
-              >
-                {isPlayingAll 
-                  ? (isPaused ? '▶️ Resume All' : '⏸️ Pause All')
-                  : '▶️ Listen to All'
-                }
-              </button>
+              {hasAudioForCollection(collectionId) && (
+                <button 
+                  className={`listen-all-btn ${isPlayingAll ? (isPaused ? 'paused' : 'playing') : ''}`}
+                  onClick={handleListenToAll}
+                  title={
+                    isPlayingAll 
+                      ? (isPaused ? 'Resume playing all verses' : 'Pause playing all verses')
+                      : 'Play all verses sequentially'
+                  }
+                >
+                  {isPlayingAll 
+                    ? (isPaused ? '▶️ Resume All' : '⏸️ Pause All')
+                    : '▶️ Listen to All'
+                  }
+                </button>
+              )}
             </div>
             <div className={`sticky-header-center ${showTitle ? 'show' : 'hide'}`}>
               {previousCollection ? (
@@ -320,11 +323,13 @@ const DynamicVersePage = () => {
             >
               <div className="verse-column">
                 <div className="sanskrit-text-container">
-                  <AudioPlayer 
-                    verseId={verse.id}
-                    isPlaying={playingVerse === verse.id}
-                    onToggle={handleToggle}
-                  />
+                  {hasAudioForVerse(collectionId, verse.id) && (
+                    <AudioPlayer 
+                      verseId={verse.id}
+                      isPlaying={playingVerse === verse.id}
+                      onToggle={handleToggle}
+                    />
+                  )}
                   <div className={`sanskrit-text ${verse.color || 'purple'}`}>
                     {verse.sanskrit}
                   </div>
