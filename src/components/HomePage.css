@@ -57,7 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
   z-index: 1;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .atharvashirsha-card::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .atharvashirsha-phalashruti-card {
@@ -138,7 +138,7 @@
 }
 
 .atharvashirsha-phalashruti-card::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .gayatri-card {
@@ -147,7 +147,7 @@
 }
 
 .gayatri-card::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .mahamrityunjaya-card {
@@ -156,7 +156,7 @@
 }
 
 .mahamrityunjaya-card::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .raamraksha-card {
@@ -165,41 +165,10 @@
 }
 
 .raamraksha-card::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
-.manuscript-link {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  background: rgba(231, 76, 60, 0.9);
-  color: white;
-  padding: 8px 12px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  backdrop-filter: blur(10px);
-}
 
-.manuscript-link:hover {
-  background: #c0392b;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
-}
-
-.manuscript-icon {
-  width: 18px;
-  height: auto;
-  object-fit: contain;
-}
 
 .administration-section {
   margin-top: 60px;
