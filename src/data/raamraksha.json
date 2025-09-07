@@ -5,6 +5,7 @@
       "id": 1,
       "sanskrit": "अस्य श्रीरामरक्षा स्तोत्र मंत्रस्य ।\nबुधकौशिक ऋषिः ॥",
       "marathi": "या रामरक्षा स्तोत्ररूपी मंत्राचा द्रष्टा बुधकौशिक ऋषि आहे.",
+      "english": "The seer of this Shri Ram Raksha stotra mantra is the sage Budhakaushik.",
       "explanation": "रामरक्षा स्तोत्राची सुरुवात - बुधकौशिक ऋषीने हे स्तोत्र रचले",
       "color": "purple"
     },
@@ -12,6 +13,7 @@
       "id": 2,
       "sanskrit": "श्री सीतारामचंद्रो देवता । अनुष्टुप छंदः ।\nसीता शक्तिः ॥",
       "marathi": "या मंत्राची देवता श्रीसीताराम आहे. या मंत्राचा छंद अनुष्टुप आहे. या मंत्राची शक्ति सीता आहे.",
+      "english": "The deity of this mantra is Shri Sita-Ram. The meter is Anushtup. The power is Sita.",
       "explanation": "मंत्राची देवता, छंद आणि शक्तीचे वर्णन",
       "color": "purple"
     },
@@ -19,6 +21,7 @@
       "id": 3,
       "sanskrit": "श्रीमद हनुमान कीलकम् । श्रीरामचंद्रप्रीत्यर्थे\nजपे विनियोगः ॥",
       "marathi": "श्रीमत् हनुमान हा या मंत्राचा वाटाड्या (कीलकम्) आहे. म्हणून प्रथम हनुमंताला नमस्कार करून मी रामरक्षास्तोत्र म्हणत आहे. या मंत्राचा जप श्रीरामचंद्र मला प्रसन्न व्हावेत म्हणून करत आहे.",
+      "english": "Shri Hanuman is the key to this mantra. Therefore, first saluting Hanuman, I recite the Ram Raksha stotra. This mantra is chanted to please Shri Ramachandra.",
       "explanation": "हनुमान हा मंत्राचा कीलक (किल्ली) आहे आणि जपाचा उद्देश",
       "color": "purple"
     },
@@ -26,6 +29,7 @@
       "id": 4,
       "sanskrit": "अथ ध्यानम् ।\nध्यायेदाजानुबाहुं धृतशरधनुषं बदपदा-\nसनस्थम् ॥",
       "marathi": "प्रारंभी श्रीरामाचे मी ध्यान करतो. ज्याचे हात गुडघ्यापर्यंत लांब (अजानुबाहु) आहेत व ज्याने धनुष्यबाण धारण (धृत) केले असून, जो बदपादासन घालून बसला आहे, त्याचे ध्यान करावे.",
+      "english": "Now the meditation. One should meditate on Rama whose arms reach to his knees, who holds a bow and arrows, and who sits in the lotus posture.",
       "explanation": "रामाच्या ध्यानाचे वर्णन - अजानुबाहु, धनुष्यबाण धारण केलेले",
       "color": "purple"
     },
@@ -33,6 +37,7 @@
       "id": 5,
       "sanskrit": "पीतं वासो वसानं नवकमलदल स्पर्धिनेत्रं\nप्रसन्नम् ॥",
       "marathi": "ज्याने पिवळे वस्त्र (पीतं वासो) परिधान (वसानं) केले आहे. व ज्याचे डोळे ताज्या कमळाच्या पाकळीशीच (नव कमलदल) जणू स्पर्धा करताहेत व जो प्रसन्न आहे.",
+      "english": "Who is wearing yellow garments, whose eyes compete with fresh lotus petals, and who is cheerful.",
       "explanation": "रामाच्या वस्त्र आणि नेत्रांचे वर्णन - पिवळे वस्त्र, कमळासारखे डोळे",
       "color": "purple"
     },
@@ -40,6 +45,7 @@
       "id": 6,
       "sanskrit": "वामांकारूद सीता मुखकमलमिलल्लोचनं\nनीरक्षाथम् ॥",
       "marathi": "डाव्या (वाम) मांडीवर (अंकारून) बसलेल्या सीतेच्या मुखकमलाकडे ज्याची दृष्टी लागली आहे, तसेच पाण्याने भरलेल्या मेघाप्रमाणे- श्यामवर्णाची ज्याची कांती आहे.",
+      "english": "Whose eyes are fixed on Sita sitting on his left thigh, whose face is like a lotus, and whose complexion is like a water-filled cloud.",
       "explanation": "नीरदाभम् = नीरद (मेष) + आभम् (पाण्याचा मेघ) आणी (नेज)",
       "color": "purple"
     },
@@ -47,6 +53,7 @@
       "id": 7,
       "sanskrit": "नानालंकारदीप्तं दधतमुरुजटामण्डन\nरामचंद्रम् ॥",
       "marathi": "जो अनेक (नाना) प्रकारच्या अलंकारांनी सुशोभित (दीप्तं) आहे, व मोठे जटामंडल शिररावर धारण (दधतम्) करणारा असा जो रामचंद्र आहे.",
+      "english": "Rama Chandra who is adorned with various ornaments and wears a large crown of matted hair on his head.",
       "explanation": "",
       "color": "purple"
     },
@@ -54,6 +61,7 @@
       "id": 8,
       "sanskrit": "इति ध्यानम् ॥",
       "marathi": "त्या रामाचे मी भक्तिभावाने ध्यान करतो.",
+      "english": "Thus ends the meditation.",
       "explanation": "",
       "color": "purple"
     },
@@ -61,6 +69,7 @@
       "id": 9,
       "sanskrit": "चरितं रघुनाथस्य शतकोटिप्रविस्तरम् ॥",
       "marathi": "श्री रघुनाथाचे चरित्र शंभर कोटि श्लोकांइतके विस्तृत आहे. (प्रविस्तरम्)",
+      "english": "The story of Raghunatha is as extensive as a hundred crore verses.",
       "explanation": "",
       "color": "purple"
     },
@@ -68,6 +77,7 @@
       "id": 10,
       "sanskrit": "एकैकमक्षरं पुंसां महापातकनाशनम् ॥",
       "marathi": "त्यातील एकेक अक्षर सुध्दा मनुष्याच्या (पुंसां) मोठमोठ्या (महा) पापांचा नाश (पौतकनाशनम्) करणारे असे आहे.",
+      "english": "Each single letter destroys the great sins of human beings.",
       "explanation": "",
       "color": "purple"
     },
@@ -75,6 +85,7 @@
       "id": 11,
       "sanskrit": "ध्याता नीलोतलश्याम राम\nराजीवलोचनम् ॥",
       "marathi": "नीलकमलाप्रमाणे ज्याचा स्यामवर्ण आहे, व कमलासारखे (राजीव) दीर्घ व प्रफुल्ल असे ज्याचे डोळे आहेत, त्याचे ध्यान करून हे स्तोत्र म्हणावे.",
+      "english": "Having meditated on Rama whose complexion is like a blue lotus and whose eyes are like lotuses, one should recite this stotra.",
       "explanation": "",
       "color": "purple"
     },
@@ -82,6 +93,7 @@
       "id": 12,
       "sanskrit": "जानकी लक्ष्मणोपेतं जटामुकुटमंडितम् ॥",
       "marathi": "ज्याच्या सलिच (उपेत) जानकी व लक्ष्मण आहेत व जटेच्या मुकुटामुळे जो सुशोभित दिसत आहे.",
+      "english": "Who is accompanied by Janaki and Lakshmana, and who is adorned with a crown of matted hair.",
       "explanation": "(लक्ष्मण + उपेतम्)",
       "color": "purple"
     },
@@ -89,6 +101,7 @@
       "id": 13,
       "sanskrit": "सासितूण धनर्बाणपाणिं नक्तं चरान्तकम् ॥",
       "marathi": "ज्याच्या एका हाती (पाणि) तलवार (सासितूण), पाठीला बाणांचा भाता व दुसऱ्या हाती धनुष्य- बाण आहे, जो आसपास वावरणाऱ्या (चर) राक्षसांचा (नक्तम्) नाश करणारा (अन्तकम्) आहे.",
+      "english": "Who holds a sword in one hand, has a quiver of arrows on his back, and carries a bow and arrows in the other hand, who is the destroyer of demons that roam at night.",
       "explanation": "(चरान्तकम् = चर + अन्तकम्)",
       "color": "purple"
     },
@@ -96,6 +109,7 @@
       "id": 14,
       "sanskrit": "स्वलीलया जगत् त्रातुमा विर्भूतमजं विभुम् ॥",
       "marathi": "जन्मरहित (अजम्) व व्यापक असलेला (आवि- भूतम्) असा राम (विभूम्), जगाच्या रक्षणासाठी (जगत् + त्रातुम्) सहज लीलेने (स्वलीलया) अवतीर्ण झाला आहे.",
+      "english": "Rama, the unborn and omnipresent Lord, who manifested himself through his own divine play to protect the world.",
       "explanation": "(जगत् + त्रातुम् + आविर्भूतम् + अजम्)",
       "color": "purple"
     },
@@ -103,6 +117,7 @@
       "id": 15,
       "sanskrit": "रामरक्षां पठेत् प्राज्ञः पापघ्नीं सर्वकामदाम् ॥",
       "marathi": "पातकांचा नाश करणाऱ्या (पापघ्नीम्) व सर्व कामना पूर्ण करणाऱ्या (सर्वकामदाम् ) या रामरक्षा स्तोत्राचे सर्व बुद्धीवंतांनी (प्राज्ञः) पठण करावे (पठेत्).",
+      "english": "The wise should recite this Ram Raksha stotra which destroys sins and fulfills all desires.",
       "explanation": "",
       "color": "purple"
     },
@@ -110,6 +125,7 @@
       "id": 16,
       "sanskrit": "शिरो मे राघवः पातु भालं दशरथा-त्मजः ॥",
       "marathi": "रघुवंशात जन्मलेला राम (राघव), माझ्या मस्तकाचे (शिरोः) रक्षण (पातु) करो. तसेच दशरथाचा आज्ञाधारक पुत्र - ज्याने आपल्या ललाटीची दुःखे भोगली- राम माझ्या कपाळाचे रक्षण करो - म्हणजेच माझ्या ललाटीची कर्तव्ये व्यवस्थित पार पडोत.",
+      "english": "May Raghava protect my head, may the son of Dasharatha protect my forehead.",
       "explanation": "[रामरक्षा नित्य म्हणतांना आपल्या सर्व अवयवांचे रामाने रक्षण करावे अशी प्रार्थना या स्तोत्रांत केलेली आहे।]",
       "color": "purple"
     },
@@ -117,6 +133,7 @@
       "id": 17,
       "sanskrit": "कौसल्येयो दृशौ पातु विश्वामित्र- प्रियः श्रुती ॥",
       "marathi": "कौसल्येचा पुत्र (कौसल्येय) राम माझ्या दोन्हीं डोळ्यांचे (दृशौ) रक्षण करोः विश्वामित्राचा लाडका (प्रिय) राम माझ्या कानांचे (श्रुती) रक्षण करो.",
+      "english": "May the son of Kausalya protect my eyes, may the beloved of Vishwamitra protect my ears.",
       "explanation": "",
       "color": "purple"
     },
@@ -124,6 +141,7 @@
       "id": 18,
       "sanskrit": "घ्राणं पातु मखत्राता मुखं सौमित्री- वत्सलः ॥",
       "marathi": "वातावरण शुद्ध करणाऱ्या यज्ञाचा रक्षक (मखत्राता) राम माझ्या नाकाचे (घ्राण) रक्षण (पातु) करो. लक्ष्मणावर (सौमित्र) जिवापाड प्रेम (वत्सलः) करणारा - त्याच्या पोषणाची काळजी करणारा - राम माझ्या मुखाचे रक्षण करो.",
+      "english": "May the protector of sacrifices protect my nose, may Rama who is affectionate towards Lakshmana protect my mouth.",
       "explanation": "",
       "color": "purple"
     },
@@ -131,6 +149,7 @@
       "id": 19,
       "sanskrit": "जिव्हां विद्यानिधीः पातु कण्ठं भरतवन्दितः ॥",
       "marathi": "सर्व विद्या धारण करणारा राम माझ्या जिभेचे (जिव्हां) रक्षण करो. भरताने ज्याला वंदन केले आहे, तो राम माझ्या कंठाचे रक्षण करो.",
+      "english": "May the treasure of knowledge protect my tongue, may Rama who is worshipped by Bharata protect my throat.",
       "explanation": "[जीभ आपल्या ताब्यात ठेवून मित्र निर्माण करता येतात. विद्या ग्रहण केल्यावर जिभेवाटे बाहेर (बोलून) येते।] [ जणू काय भरत रामाच्या कंठातील - गळ्यातील - ताईतच होता।]",
       "color": "purple"
     },
@@ -138,6 +157,7 @@
       "id": 20,
       "sanskrit": "स्कंधौ दिव्यायुधः पातु, भुजौ भग्नेशकार्मुकः ॥",
       "marathi": "दिव्य अशी आयुधे स्कंधावर धारण करणारा राम माझ्या खांद्यांचे रक्षण करो. शिवधनुष्याचा ज्याने भंग केला असा राम माझ्या बाहूचे (भुजौ) रक्षण करो.",
+      "english": "May Rama who carries divine weapons on his shoulders protect my shoulders. May Rama who broke Shiva's bow protect my arms.",
       "explanation": "भग्नेशकार्मुकः = भग्न + ईश + कार्मुकः\nकार्मुकः = धनुष्य\n[ शिवधनुष्याचा भंग करणारा]",
       "color": "purple"
     },
@@ -145,6 +165,7 @@
       "id": 21,
       "sanskrit": "करौ सीतापतिः पातु हृदयं जामदग्न्यजित् ॥",
       "marathi": "[ज्याने सीतेचा हात संकटसमयी सोडला नाही असा] एकपत्नीव्रत राखणारा सीतापति राम माझ्या हातांचे रक्षण करो. तर ज्या रामाने जामदग्निचे हृदय जिंकले, त्या रामाने माझ्या हृदयाचे रक्षण करावे.",
+      "english": "May Sita's husband protect my hands, may Rama who conquered Jamadagni protect my heart.",
       "explanation": "जामदग्न्यजित् = जामदग्निला जिंकणारा\nजामदाग्नि = जमदग्नीचा पुत्र परशुराम",
       "color": "purple"
     },
@@ -152,6 +173,7 @@
       "id": 22,
       "sanskrit": "मध्यं पातु खरध्वंसी नामि जाम्बवदाश्रयः ॥",
       "marathi": "नरमांसभक्षक खर राक्षसाचा विध्वंस (खरध्वंसी) करणारा राम माझ्या पोटाचे (मध्य) रक्षण करो. जाम्बवानाचे आश्रय- दाते राम माझ्या नाभीचे रक्षण करोत.",
+      "english": "May Rama who destroyed the demon Khara protect my abdomen. May Rama who is the refuge of Jambavan protect my navel.",
       "explanation": "[ब्रम्हदेवाचा पुत्र जाम्बवान; ब्रम्हदेव तर विष्णूच्या नाभीतील कमळात असतो।]",
       "color": "purple"
     },
@@ -159,6 +181,7 @@
       "id": 23,
       "sanskrit": "सुग्रीवेशः कटि पातु साक्थनी हनुमत्प्रभुः ॥",
       "marathi": "सुग्रीवाचा स्वामी असा राम माझ्या कमरेचे (कटि) रक्षण करो. हनुमंताचा प्रभू असा राम माझ्या जांघाचे (सक्थिनी) रक्षण करो.",
+      "english": "May Rama who is the lord of Sugriva protect my waist. May Rama who is the lord of Hanuman protect my thighs.",
       "explanation": "[सुग्रीवेशः = सुग्रीव + ईशः]",
       "color": "purple"
     },
@@ -166,6 +189,7 @@
       "id": 24,
       "sanskrit": "उरु रघुत्तमः पातु रक्षः कुलविनाशकृत् ॥",
       "marathi": "राक्षसकुळांचा नाश करणारा रघुकुळातील श्रेष्ठ असा राम माझ्या मांड्यांचे रक्षण करो.",
+      "english": "May the best of the Raghu dynasty, who destroyed the demon clans, protect my thighs.",
       "explanation": "[उरु = मांडी]",
       "color": "purple"
     },
@@ -173,6 +197,7 @@
       "id": 25,
       "sanskrit": "जानुनि सेतुकृत्पातु जंघे दशमुखांतकः ॥",
       "marathi": "[गुडघे हे सेतूसाख्खे, शरीरातील भिन्न अवयव जोडण्याचे काम करतात।] समुद्रावर सेतू बांधणारे राम माझ्या गुडघ्यांचे रक्षण करोत. दशमुखी रावणाचा अंत करणारा राम माझ्या दोन्हीं पोटऱ्यांचे (जंघे) रक्षण करो.",
+      "english": "May Rama who built the bridge protect my knees. May Rama who destroyed the ten-headed Ravana protect my shins.",
       "explanation": "[जानू = गुडघा;\nदशमुखांतकः = दशमुख + अंत (रावण)]",
       "color": "purple"
     },
@@ -180,6 +205,7 @@
       "id": 26,
       "sanskrit": "पादौ बिभीषणश्रीदः पातु राम्रोडखिलं वपुः ॥",
       "marathi": "विभीषणाला राज्य, संपत्ती (श्री) देणारा राम माझ्या पावलांचे (पादौ) रक्षण (पातु) करो. अशा प्रकारे राम माझ्या संपूर्ण (अखिलं) शरीराचे (वपुः) रक्षण करो.",
+      "english": "May Rama who gave kingdom and wealth to Vibhishana protect my feet. Thus may Rama protect my entire body.",
       "explanation": "राम्रोडखिलं = रामः+अखिलं",
       "color": "purple"
     },
@@ -187,6 +213,7 @@
       "id": 27,
       "sanskrit": "एतां रामबलोपेतां रक्षां यः सुकृति पठेत् ॥",
       "marathi": "याप्रमाणें (एतां) रामाच्या सामर्थ्याने (रामबल) युक्त असलेल्या या रामरक्षेचे (रक्षा) जो (यः) पुण्यवान (सुकृति) मनुष्य पठण करेल (पठेत् )......",
+      "english": "The virtuous person who recites this Ram Raksha endowed with Rama's power...",
       "explanation": "",
       "color": "purple"
     },
@@ -194,6 +221,7 @@
       "id": 28,
       "sanskrit": "स चिरायुः सुखी पुत्री विजयी विनयी भवेत् ॥",
       "marathi": "तो दीर्घायुषी (चिरायुः), सुखी, पुत्रवान् व सर्व कार्यात विजयी आणि विनयसंपन्न होईल (भवेत्).",
+      "english": "He will become long-lived, happy, blessed with children, victorious and humble.",
       "explanation": "",
       "color": "purple"
     },
@@ -201,6 +229,7 @@
       "id": 29,
       "sanskrit": "पातालभूतलव्योम चारिणश्चन्द चारिणः ॥",
       "marathi": "पाताळ, भूतल किंवा आकाशात (व्योम) संचार करणारे (चारिणः), कपटी (छन्द्ध)..",
+      "english": "Those who move in the netherworld, earth or sky, the deceitful ones...",
       "explanation": "",
       "color": "purple"
     },
@@ -208,6 +237,7 @@
       "id": 30,
       "sanskrit": "न द्रष्टुमपि शक्तास्ते रक्षितं रामनामाभिः ॥",
       "marathi": "..ते (कपटी) लोक, रामनामांनी रक्षण केलेल्या मनुष्याला डोळ्यांनी (द्रष्टुम् अपि) पाहू शकणार (शक्त:) नाहींत (न).",
+      "english": "Those deceitful beings are not even able to see the person protected by Rama's names.",
       "explanation": "[शक्तास्ते = शक्तः + ते]",
       "color": "purple"
     },
@@ -215,7 +245,152 @@
       "id": 31,
       "sanskrit": "रामेति रामभद्रेति रामचन्द्रेति वा स्मरन् ॥",
       "marathi": "राम, रामभद्र, रामचन्द्र अगा (इति) नावांनी स्मरण करणारा माणूस .... [नरः]",
+      "english": "The person who remembers by the names Rama, Ramabhadra, Ramachandra...",
       "explanation": "[राम + इति, रामभद्र+ इति; रामचन्द्र + इति]",
+      "color": "purple"
+    },
+    {
+      "id": 32,
+      "sanskrit": "नरो न लिप्यते पापैभुक्तिं मुक्तिं च विन्दति ॥",
+      "marathi": "तो मनुष्य (नरः) केटांही पापांनी लिप्त होणार नाहीं (न लिप्यते), व (च) त्याला अनेक सुपोषभोग (भुक्ति) मिळून शेवटी मोक्ष मिळतो (विन्दति).",
+      "english": "That person will not be tainted by sins and will attain both worldly enjoyment and liberation.",
+      "explanation": "[भुक्ति = ऐहिक सुख, मुक्ति = पारमार्थिक सुख]",
+      "color": "purple"
+    },
+    {
+      "id": 33,
+      "sanskrit": "जगज्जेत्रैकमंत्रेण रामनाम्नाभिरक्षितम्\nयः कण्ठे धारयेत् तस्य करस्थाः सर्वसिद्धयः ॥",
+      "marathi": "सर्व जगाला जिंकणारा (जगत् जेन्त्र) मुख्य मंत्र (एकमंत्रण) जो रामनाम जप त्या मंत्राने मंतरलेला ताईत (अभिरक्षित) जौ आपल्या गळ्यात (कण्ठे) धारण करतो (धारयेत्), त्याला (तस्य) सर्व सिद्धी हस्तगत (करस्थाः) होतील.",
+      "english": "He who wears around his neck the talisman protected by the Ram mantra, which is the principal mantra that conquers the world, will have all accomplishments in his hands.",
+      "explanation": "[जगज्जेत्रैकमंत्रेण = जगत्+जेत्र+एकमंत्रेण]",
+      "color": "purple"
+    },
+    {
+      "id": 34,
+      "sanskrit": "वज्रपंजरनामेदं यो रामकवचं स्मरेत्\nअव्याहताज्ञः सर्वत्र लभते जयमंगलम् ॥",
+      "marathi": "इंद्राच्या पंजर नांवाच्या वज्राप्रमाणे हे अभेद्य रामरक्षास्तोत्र (रामकृवचं) जो (यः) स्मरतो, त्याची आज्ञा सर्वत्र (अव्याहत) मानली जाते व त्याला जय प्राप्त होऊन त्याचे नेहमी कल्याण (मंगलम्) होते.",
+      "english": "He who remembers this Ram Kavach (armor) which is like Indra's vajra, his commands are obeyed everywhere and he attains victory and prosperity.",
+      "explanation": "[वज्रपंजर+नामा इदं] [अव्याहत + आज्ञाः]",
+      "color": "purple"
+    },
+    {
+      "id": 35,
+      "sanskrit": "आदिष्टवान् यथा खप्ने रामरक्षामिमां हराः ।\nतथा लिखितवान् प्रातः प्रबुद्धो बुधकौशिकः ॥",
+      "marathi": "ही रामरक्षा भगवान शंकरांनी (हराः) बुध-कौशिक ऋषिना स्वप्नात जगी (यथा) दिसली - सांगितली - तशीच (तथा) ती सकाळी (प्रातः) जागे झाल्यावर (प्रबुच्दो) त्यांनी लिहून ठेवली (लिखितवान् ).",
+      "english": "As Lord Shiva instructed Budhakaushik Rishi in a dream about this Ram Raksha, so did the sage write it down upon awakening in the morning.",
+      "explanation": "[रामरक्षामिमां = रामरक्षाम् + इमाम् (ही)]",
+      "color": "purple"
+    },
+    {
+      "id": 36,
+      "sanskrit": "आरामः कल्पवृक्षाणां विरामः सकलापदाम् ॥\nअभिरामास्त्रलोकानाम् रामः श्रीमान् स नः प्रभुः ॥",
+      "marathi": "श्रीराम हा जणू कल्पवृक्षांचा बगीचाच (आरामः = विसावा) आहे व सर्व आपत्ती (सकल आपदाम्) नाहींशा (विरामः) करणारा व तिन्हि लोकात आनंद देणारा (अभिराम त्रिलोकानाम्) असा हा राम आमचा (नः) प्रभू आहे.",
+      "english": "Rama is like a garden of wish-fulfilling trees, the destroyer of all calamities, and the source of joy in all three worlds. He is our glorious Lord.",
+      "explanation": "[अभिरामः + त्रिलोकानाम् (तिन्ही जगात)]",
+      "color": "purple"
+    },
+    {
+      "id": 37,
+      "sanskrit": "तरणौ रूपसंपन्नौ सुकुमारौ महाबलौ ।\nपुण्डरीक विशालाक्षौ चीरकृष्णाजिनाम्बरौ ॥",
+      "marathi": "तरुण असे राम-लक्ष्मण रूपवान्, सुकुमार, अतिशय बलवान, कमलदलाप्रमाणे विशाल नेत्र असलेले, तसेच वल्कले (चीर) व कृष्णाजिन वस्त्र परिधान करणारे .....",
+      "english": "Young Rama and Lakshmana are handsome, gentle, very strong, with lotus-like large eyes, wearing bark and deer skin garments.",
+      "explanation": "[पुण्डरीक = कमल; चीर = वल्कले, कृष्णाजिनाम्बरौ = कृष्णाजिन + अंबरौ] [अंबर = वस्त्र]",
+      "color": "purple"
+    },
+    {
+      "id": 38,
+      "sanskrit": "फलमूलाशिनौ दान्तौ तापसौ ब्रम्हचारिणौ।\nपुत्रौ दशरथस्यैतौ भ्रातरौ रामलक्ष्मणौ ॥",
+      "marathi": "कंदमूल (फलमूल) भक्षण करणारे (आशिनौ), इंद्रिय जिंकणारे (दान्तौ), तपस्वी ब्रम्हचारी असे हे दशरथाचे (दशरथस्य एतौ) दोघे पुत्र, रामलक्ष्मण हे दोघे बंधू (भ्रातरौ)......",
+      "english": "Eating fruits and roots, self-controlled, ascetics, celibate, these two sons of Dasharatha, the brothers Rama and Lakshmana.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 39,
+      "sanskrit": "शरण्यौ सर्वसत्त्वानां श्रेष्ठौ सर्वधनुष्मतां।\nरक्षःकुल निहन्तारौ त्रायेतां नो रघुत्तमौ ॥",
+      "marathi": "सर्व प्राणीमात्रांचे (सत्त्वानां) रक्षण करणारे (शरण देणारे), सर्व धनुर्धरांमध्ये श्रेष्ठ, राक्षसांच्या कुलांचा संहार करणारे व रघुकुलातील प्रमुख (उत्तमौ) असे हे राम लक्ष्मण आमचे (नो-नः) रक्षण करोत (त्रायेतां).",
+      "english": "May Rama and Lakshmana, who are the refuge of all beings, the best among all archers, destroyers of demon clans, and the best of the Raghu dynasty, protect us.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 40,
+      "sanskrit": "आत्तसज्जधनुषाविणुस्पृशावक्षया शुग-\nनिषंग संगिनौ। रक्षणाय मम रामलक्ष्मणा वग्रतः पथि सदैव गच्छताम् ॥",
+      "marathi": "सदैव सज्ज असे (इषु), धनुष्य हाती धरणारे व अक्षय बाणांचे भाते बाळगणारे (गुगनिषंग सारी) रामलक्ष्मण सदैव माझ्या मार्गात (पथि) माझ्या रक्षणाकरता (रक्षणाय) पुढे (अग्रतः) चालोत. (गच्छताम).",
+      "english": "May Rama and Lakshmana, always ready with bows and arrows, carrying inexhaustible quivers, always walk ahead on my path for my protection.",
+      "explanation": "[आत्तसज्ज + धनुषौ । इषु + स्पृशौ अक्षयाः]",
+      "color": "purple"
+    },
+    {
+      "id": 41,
+      "sanskrit": "सन्नद्धः कवची खड्गी चापबाणधरो युवा।\nगच्छन् मनोरयोऽस्माकं रामः पातु सलक्ष्मणः ॥",
+      "marathi": "सदैव सिध्द (सन्नध्दः), कवच घालून, धनुष्य- बाण बाळगणारा तरुण व आमचे (अस्माकं) जणू मानसच (मनोरथः) असा, लक्ष्मणासह जाणारा राम आमचे रक्षण करो.",
+      "english": "May Rama, always prepared, wearing armor, carrying sword, bow and arrows, young, like our mental wish, along with Lakshmana, protect us.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 42,
+      "sanskrit": "रामो दाशरथिः शूरो लक्ष्मणानुचरो बलि ।\nकाकुस्थः पुरुषः पूर्णः कौसल्येयो रघुत्तमः ॥",
+      "marathi": "दशरथाचा पुत्र राम (दाशरथि), शूर लक्ष्मण ज्याचा सेवक (अनुचरः) आहे, असा बलवान, ककुस्थ कुलोलन (काकुस्य), महापुरुष, पूर्णब्रम्ह कौसल्यातनय, रघुकुळातील उत्तम असा राम....",
+      "english": "Rama, son of Dasharatha, with brave Lakshmana as his attendant, strong, from the Kakutstha lineage, the supreme being, complete, son of Kausalya, the best of the Raghu dynasty.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 43,
+      "sanskrit": "वेदान्तवेद्यो यज्ञेशः पुराणपुरुषोत्तमः ।\nजानकी वल्लभः श्रीमान प्रमेय पराक्रमः ॥",
+      "marathi": "वेदान्तशास्त्रात ज्ञेय, यज्ञपुरुष, अनादि पुरुषोत्तम, जानकीनाथ, वैभववान (श्रीमान्) व अतुल पराक्रमी .....",
+      "english": "Knowable through Vedanta, lord of sacrifices, the supreme being of ancient times, beloved of Janaki, glorious and incomparably valorous.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 44,
+      "sanskrit": "इत्येत्यानि जपलित्य मद्भक्तः श्रध्दयान्वितः।\nअश्वमेधाधिक पुष्यं संप्राप्नोति न संशयः ॥",
+      "marathi": "अशा नांवांनी (इति एतानि) श्रद्धापूर्वक नित्य जप करणाऱ्या (जपेत् नित्यं) माझ्या भक्ताला अश्वमेध यज्ञाच्या पुण्याहून अधिक (अश्वमेधाधिक) पुण्य लाभेल (संप्राप्नोति) यात संशय नाहीं.",
+      "english": "There is no doubt that my devotee who recites these names with faith will attain merit greater than that of the Ashvamedha sacrifice.",
+      "explanation": "[इत्येत्यानि = इति + एतानि;] [जपेन्नित्यं = जपेत् + नित्यं] [अश्वमेधाधिक = अश्वमेध + अधिक]",
+      "color": "purple"
+    },
+    {
+      "id": 45,
+      "sanskrit": "रामं दुर्वादलश्यामं पद्धाक्षं पीतवाससम।\nस्तुवानो नामभिर्दिव्येन ते संसारिणो नरः ॥",
+      "marathi": "दुर्वादलाप्रमाणे श्यामल वर्ण व ज्याचे डोळे कमलाप्रमाणे (पद्धाक्ष) आहेत, जो पीतांबर (पत्तिवाससं) नेसला आहे अशा रामाची स्तुति जे लोक दिव्य नामांनी करतात (स्तुवानी) ते जन (नरः) जन्ममरणाच्या प्रवासातून सुटतात. - संसारी रहात नाहींत (न संसारिणः).",
+      "english": "Those people who praise Rama with divine names - Rama whose complexion is like durva grass, whose eyes are like lotuses, wearing yellow garments - are freed from the cycle of birth and death.",
+      "explanation": "[नामभिर्दिव्यैर्न = नामभिः + दिव्यैः+न]",
+      "color": "purple"
+    },
+    {
+      "id": 46,
+      "sanskrit": "राम लक्ष्मणपूर्वजं रघुवर सीतापति सुंदर।\nकाकुस्थ करुणार्णव गुणनिधिं विप्रप्रियं धार्मिकम् ॥",
+      "marathi": "लक्ष्मणाचा ज्येष्ठ भ्राता (लक्ष्मणापूर्वी जन्मलेला - लक्ष्मणपूर्वजं), रघुकुले श्रेष्ठ (वरं), सीतेचा पति, सुंदर दिसणारा, ककुस्थ कुलोत्पन्न, दयेवा सागर, सगुणांचा निधी, ब्राम्हण ज्याला प्रिय आहेत, असा धार्मिक राम ....",
+      "english": "Rama, the elder brother of Lakshmana, the best of the Raghu dynasty, husband of Sita, beautiful, from the Kakutstha lineage, ocean of compassion, treasure of virtues, beloved of Brahmins, righteous.",
+      "explanation": "[करुणार्णवं = करुण + अर्णवं] [अर्णवं = सागर]",
+      "color": "purple"
+    },
+    {
+      "id": 47,
+      "sanskrit": "राजेन्द्र सत्यसन्धं दशरथतनयं शामल शांतमूर्ति ।\nवंदे लोकाभिराम रघुकुलतिलक राघवं रावणारिम् ॥",
+      "marathi": "राजश्रेष्ठ, सत्यव्रत (सत्यसन्धं), शामवर्ण, शांतमूर्ति असा दशरथपुत्र राम लोकांना आनंद देणारा (अभिराम), रघुकुलाला तिलका- प्रमाणे शोभणारा आणि रावणाचा रात्र जो राघव त्याला मी वंदन (वंदे) करतो.",
+      "english": "I bow to Raghava, the king of kings, truthful, son of Dasharatha, dark-complexioned, peaceful form, who brings joy to the world, the crown jewel of the Raghu dynasty, and the enemy of Ravana.",
+      "explanation": "[रावणारिम् = रावन + अरिम्]",
+      "color": "purple"
+    },
+    {
+      "id": 48,
+      "sanskrit": "रामाय रामभद्राय रामचंद्राय वेधसे ।\nरघुनाथाय नाथाय सीताया: पतये नमः ॥",
+      "marathi": "राम, रामचंद्र, राममद्र, वेधस, रघुनाथ, नाय अशी ज्याची नांवे आहेत त्या सीतापतीला नमस्कार असो.",
+      "english": "Salutations to the husband of Sita, who is known by the names Rama, Ramabhadra, Ramachandra, Vedhas, Raghunatha, and Nath.",
+      "explanation": "",
+      "color": "purple"
+    },
+    {
+      "id": 49,
+      "sanskrit": "श्रीराम राम रघुनन्दन राम राम।\nश्रीराम राम भरताग्रज राम राम ।\nश्रीराम राम रणकर्कर। राम राम ।\nश्रीराम राम शरणं भव राम रामा हो. (भव).",
+      "marathi": "हे रघुनंदन श्रीरामा, हे भरताचा ज्येष्ठ बंधू (भरताग्रज) श्रीरामा, हे रणांगणात कठोरपणा करणाऱ्या श्रीरामा, तू आमचा रक्षणकर्ता हो. (भव).",
+      "english": "O Shri Rama, delight of the Raghu dynasty, O Shri Rama, elder brother of Bharata, O Shri Rama, fierce in battle, be our protector, O Rama.",
+      "explanation": "",
       "color": "purple"
     }
   ]
