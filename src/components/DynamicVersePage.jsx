@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { getCollectionById, getPreviousCollection, getNextCollection } from '../data/index'
 import { loadCollectionData } from '../data/loader'
 import { hasAudioForVerse, hasAudioForCollection } from '../utils/audioUtils'
+import { hasManuscripts } from '../utils/manuscriptUtils'
 import AudioPlayer from './AudioPlayer'
 import '../App.css'
 
@@ -16,13 +17,14 @@ const DynamicVersePage = () => {
   const [isPaused, setIsPaused] = useState(false)
   const [currentPlayingIndex, setCurrentPlayingIndex] = useState(0)
   const [nextVerseToPlay, setNextVerseToPlay] = useState(0)
+  const [hasManuscript, setHasManuscript] = useState(false)
   
   // Get navigation collections
   const previousCollection = getPreviousCollection(collectionId)
   const nextCollection = getNextCollection(collectionId)
 
   useEffect(() => {
-    const loadData = () => {
+    const loadData = async () => {
       try {
         const collection = getCollectionById(collectionId)
         if (!collection) {
@@ -35,6 +37,10 @@ const DynamicVersePage = () => {
         }
         
         setData(collectionData)
+        
+        // Check if manuscripts are available
+        const manuscriptAvailable = await hasManuscripts(collectionId)
+        setHasManuscript(manuscriptAvailable)
       } catch (error) {
         console.error('Error loading data:', error)
         setData(null)
@@ -270,7 +276,18 @@ const DynamicVersePage = () => {
               <span className="nav-link disabled">→</span>
             )}
           </h1>
-          <p className="page-subtitle">Sanskrit Verses with Marathi Translations</p>
+          <div className="page-subtitle-container">
+            <p className="page-subtitle">Sanskrit Verses with Marathi Translations</p>
+            {hasManuscript && (
+              <Link 
+                to={`/manuscripts/${collectionId}`}
+                className="manuscript-link"
+                title="View original manuscript"
+              >
+                📜 View Manuscript
+              </Link>
+            )}
+          </div>
         </div>
         
         <div className="verses-container">

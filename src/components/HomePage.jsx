@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { getAllCollections } from '../data/index'
+import { hasManuscripts } from '../utils/manuscriptUtils'
 import './HomePage.css'
 
 const HomePage = () => {
   const collections = getAllCollections()
+  const [manuscriptAvailability, setManuscriptAvailability] = useState({})
+
+  useEffect(() => {
+    const checkManuscripts = async () => {
+      const availability = {}
+      for (const collection of collections) {
+        availability[collection.id] = await hasManuscripts(collection.id)
+      }
+      setManuscriptAvailability(availability)
+    }
+    checkManuscripts()
+  }, [collections])
 
   return (
     <div className="home-container">
@@ -15,29 +28,49 @@ const HomePage = () => {
       
       <div className="collections-grid">
         {collections.map((collection) => (
+          <div key={collection.id} className="collection-card-wrapper">
+            <Link 
+              to={`/verse/${collection.id}`}
+              className={`collection-card ${collection.id}-card`}
+            >
+              <div className="collection-content">
+                <h3 className="collection-title">{collection.title}</h3>
+                <p className="collection-description">{collection.description}</p>
+                <div className="collection-arrow">→</div>
+              </div>
+            </Link>
+            {manuscriptAvailability[collection.id] && (
+              <Link 
+                to={`/manuscripts/${collection.id}`}
+                className="manuscript-link"
+                title="View original manuscript"
+              >
+                <img 
+                  src="/manuscript.jpg" 
+                  alt="Manuscript" 
+                  className="manuscript-icon"
+                />
+                <span>Manuscript</span>
+              </Link>
+            )}
+          </div>
+        ))}
+      </div>
+      
+      <div className="administration-section">
+        <h2 className="administration-title">Administration</h2>
+        <div className="administration-grid">
           <Link 
-            key={collection.id} 
-            to={`/verse/${collection.id}`}
-            className="collection-card"
+            to="/timing-editor"
+            className="collection-card timing-editor-card"
           >
             <div className="collection-content">
-              <h3 className="collection-title">{collection.title}</h3>
-              <p className="collection-description">{collection.description}</p>
+              <h3 className="collection-title">🎵 Audio Timing Editor</h3>
+              <p className="collection-description">Create precise timing for audio verses</p>
               <div className="collection-arrow">→</div>
             </div>
           </Link>
-        ))}
-        
-        <Link 
-          to="/timing-editor"
-          className="collection-card timing-editor-card"
-        >
-          <div className="collection-content">
-            <h3 className="collection-title">🎵 Audio Timing Editor</h3>
-            <p className="collection-description">Create precise timing for audio verses</p>
-            <div className="collection-arrow">→</div>
-          </div>
-        </Link>
+        </div>
       </div>
     </div>
   )

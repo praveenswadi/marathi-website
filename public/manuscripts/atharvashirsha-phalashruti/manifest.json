@@ -1,0 +1,36 @@
+{
+  "collection": "atharvashirsha-phalashruti",
+  "title": "Atharvashirsha-phalashruti Manuscript Images",
+  "description": "Original manuscript pages for atharvashirsha-phalashruti",
+  "images": [
+    {
+      "id": 1,
+      "filename": "atharvashirsha-08.jpg",
+      "url": "/manuscripts/atharvashirsha-phalashruti/atharvashirsha-08.jpg",
+      "title": "Manuscript Page 1",
+      "description": "Original manuscript page 1 - atharvashirsha-08.jpg"
+    },
+    {
+      "id": 2,
+      "filename": "atharvashirsha-09.jpg",
+      "url": "/manuscripts/atharvashirsha-phalashruti/atharvashirsha-09.jpg",
+      "title": "Manuscript Page 2",
+      "description": "Original manuscript page 2 - atharvashirsha-09.jpg"
+    },
+    {
+      "id": 3,
+      "filename": "atharvashirsha-10.jpg",
+      "url": "/manuscripts/atharvashirsha-phalashruti/atharvashirsha-10.jpg",
+      "title": "Manuscript Page 3",
+      "description": "Original manuscript page 3 - atharvashirsha-10.jpg"
+    },
+    {
+      "id": 4,
+      "filename": "atharvashirsha-11.jpg",
+      "url": "/manuscripts/atharvashirsha-phalashruti/atharvashirsha-11.jpg",
+      "title": "Manuscript Page 4",
+      "description": "Original manuscript page 4 - atharvashirsha-11.jpg"
+    }
+  ],
+  "generatedAt": "2025-09-07T01:53:20.926Z"
+}

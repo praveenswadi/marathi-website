@@ -1,74 +1,52 @@
 // Utility functions for manuscript handling
 
 /**
- * Get the manuscript directory path for a collection
- * @param {string} collectionId - The ID of the collection (e.g., 'atharvashirsha')
- * @returns {string} - The path to the manuscript directory
- */
-export const getManuscriptDirectory = (collectionId) => {
-  return `/manuscripts/${collectionId}/`
-}
-
-/**
  * Check if a collection has manuscript images available
- * This function attempts to load the manuscript directory to see if images exist
- * @param {string} collectionId - The ID of the collection
+ * @param {string} collectionId - The collection ID to check
  * @returns {Promise<boolean>} - True if manuscripts are available
  */
-export const hasManuscriptsForCollection = async (collectionId) => {
+export const hasManuscripts = async (collectionId) => {
   try {
-    const manifestPath = `/manuscripts/${collectionId}/manifest.json`
-    const response = await fetch(manifestPath)
+    const response = await fetch(`/manuscripts/${collectionId}/manifest.json`)
     return response.ok
   } catch (error) {
+    console.log(`No manuscripts found for collection: ${collectionId}`)
     return false
   }
 }
 
 /**
- * Get list of manuscript images for a collection
- * Reads from a manifest.json file in the manuscript directory
- * @param {string} collectionId - The ID of the collection
- * @returns {Promise<Array>} - Array of manuscript image objects
+ * Get manuscript manifest for a collection
+ * @param {string} collectionId - The collection ID
+ * @returns {Promise<Object|null>} - Manifest object or null if not found
  */
-export const getManuscriptImages = async (collectionId) => {
+export const getManifest = async (collectionId) => {
   try {
-    const manifestPath = `/manuscripts/${collectionId}/manifest.json`
-    const response = await fetch(manifestPath)
-    
+    const response = await fetch(`/manuscripts/${collectionId}/manifest.json`)
     if (!response.ok) {
-      return []
+      return null
     }
-    
-    const manifest = await response.json()
-    return manifest.images || []
+    return await response.json()
   } catch (error) {
-    console.error('Error loading manuscript manifest:', error)
-    return []
+    console.error(`Error loading manifest for ${collectionId}:`, error)
+    return null
   }
 }
 
 /**
- * Generate a manifest.json file content for a collection
- * This is a helper function to create the manifest structure
- * @param {Array} imageFilenames - Array of image filenames
- * @param {string} collectionId - The ID of the collection
- * @returns {Object} - Manifest object
+ * Get all available manuscript collections
+ * @returns {Promise<Array>} - Array of collection IDs that have manuscripts
  */
-export const generateManifest = (imageFilenames, collectionId) => {
-  const images = imageFilenames.map((filename, index) => ({
-    id: index + 1,
-    filename: filename,
-    url: `/manuscripts/${collectionId}/${filename}`,
-    title: `Manuscript Page ${index + 1}`,
-    description: `Original manuscript page ${index + 1}`
-  }))
+export const getAvailableManuscriptCollections = async () => {
+  const collections = ['atharvashirsha', 'atharvashirsha-phalashruti', 'raamraksha']
+  const availableCollections = []
   
-  return {
-    collection: collectionId,
-    title: `${collectionId} Manuscript Images`,
-    description: `Original manuscript pages for ${collectionId}`,
-    images: images,
-    generatedAt: new Date().toISOString()
+  for (const collectionId of collections) {
+    const hasManuscript = await hasManuscripts(collectionId)
+    if (hasManuscript) {
+      availableCollections.push(collectionId)
+    }
   }
+  
+  return availableCollections
 }
