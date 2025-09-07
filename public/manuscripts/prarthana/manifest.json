@@ -1,0 +1,43 @@
+{
+  "collection": "prarthana",
+  "title": "Prarthana Manuscript Images",
+  "description": "Original manuscript pages for prarthana",
+  "images": [
+    {
+      "id": 1,
+      "filename": "IMG_2908.jpeg",
+      "url": "/manuscripts/prarthana/IMG_2908.jpeg",
+      "title": "Manuscript Page 1",
+      "description": "Original manuscript page 1 - IMG_2908.jpeg"
+    },
+    {
+      "id": 2,
+      "filename": "IMG_2909.jpeg",
+      "url": "/manuscripts/prarthana/IMG_2909.jpeg",
+      "title": "Manuscript Page 2",
+      "description": "Original manuscript page 2 - IMG_2909.jpeg"
+    },
+    {
+      "id": 3,
+      "filename": "IMG_2910.jpeg",
+      "url": "/manuscripts/prarthana/IMG_2910.jpeg",
+      "title": "Manuscript Page 3",
+      "description": "Original manuscript page 3 - IMG_2910.jpeg"
+    },
+    {
+      "id": 4,
+      "filename": "IMG_2911.jpeg",
+      "url": "/manuscripts/prarthana/IMG_2911.jpeg",
+      "title": "Manuscript Page 4",
+      "description": "Original manuscript page 4 - IMG_2911.jpeg"
+    },
+    {
+      "id": 5,
+      "filename": "IMG_2912.jpeg",
+      "url": "/manuscripts/prarthana/IMG_2912.jpeg",
+      "title": "Manuscript Page 5",
+      "description": "Original manuscript page 5 - IMG_2912.jpeg"
+    }
+  ],
+  "generatedAt": "2025-09-07T04:32:06.418Z"
+}
