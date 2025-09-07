@@ -1,15 +1,27 @@
 {
-  "collection": "atharvashirsha",
-  "title": "Atharvashirsha Manuscript Images",
-  "description": "Original manuscript pages for Atharvashirsha",
+  "title": "अथर्वशीर्ष",
+  "description": "Original manuscript of Atharvashirsha",
   "images": [
     {
-      "id": 1,
-      "filename": "example-page-1.jpg",
-      "url": "/manuscripts/atharvashirsha/example-page-1.jpg",
-      "title": "Manuscript Page 1",
-      "description": "First page of the original manuscript"
+      "id": "atharvashirsha-01",
+      "title": "Page 1",
+      "description": "Beginning of Atharvashirsha",
+      "filename": "atharvashirsha-01.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-01.jpg"
+    },
+    {
+      "id": "atharvashirsha-02", 
+      "title": "Page 2",
+      "description": "Continuation of Atharvashirsha",
+      "filename": "atharvashirsha-02.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-02.jpg"
+    },
+    {
+      "id": "atharvashirsha-03",
+      "title": "Page 3", 
+      "description": "Final page of Atharvashirsha",
+      "filename": "atharvashirsha-03.jpg",
+      "url": "/manuscripts/atharvashirsha/atharvashirsha-03.jpg"
     }
-  ],
-  "generatedAt": "2024-01-01T00:00:00.000Z"
+  ]
 }

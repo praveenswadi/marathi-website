@@ -1,99 +1,20 @@
 {
-  "collection": "raamraksha",
-  "title": "Raamraksha Manuscript Images",
-  "description": "Original manuscript pages for raamraksha",
+  "title": "रामरक्षा",
+  "description": "Original manuscript of Raamraksha Stotra",
   "images": [
     {
-      "id": 1,
-      "filename": "IMG_2893 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2893 Medium.jpeg",
-      "title": "Manuscript Page 1",
-      "description": "Original manuscript page 1 - IMG_2893 Medium.jpeg"
+      "id": "raamraksha-01",
+      "title": "Page 1",
+      "description": "Beginning of Raamraksha Stotra",
+      "filename": "raamraksha-01.jpg",
+      "url": "/manuscripts/raamraksha/raamraksha-01.jpg"
     },
     {
-      "id": 2,
-      "filename": "IMG_2894 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2894 Medium.jpeg",
-      "title": "Manuscript Page 2",
-      "description": "Original manuscript page 2 - IMG_2894 Medium.jpeg"
-    },
-    {
-      "id": 3,
-      "filename": "IMG_2895 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2895 Medium.jpeg",
-      "title": "Manuscript Page 3",
-      "description": "Original manuscript page 3 - IMG_2895 Medium.jpeg"
-    },
-    {
-      "id": 4,
-      "filename": "IMG_2896 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2896 Medium.jpeg",
-      "title": "Manuscript Page 4",
-      "description": "Original manuscript page 4 - IMG_2896 Medium.jpeg"
-    },
-    {
-      "id": 5,
-      "filename": "IMG_2897 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2897 Medium.jpeg",
-      "title": "Manuscript Page 5",
-      "description": "Original manuscript page 5 - IMG_2897 Medium.jpeg"
-    },
-    {
-      "id": 6,
-      "filename": "IMG_2898 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2898 Medium.jpeg",
-      "title": "Manuscript Page 6",
-      "description": "Original manuscript page 6 - IMG_2898 Medium.jpeg"
-    },
-    {
-      "id": 7,
-      "filename": "IMG_2899 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2899 Medium.jpeg",
-      "title": "Manuscript Page 7",
-      "description": "Original manuscript page 7 - IMG_2899 Medium.jpeg"
-    },
-    {
-      "id": 8,
-      "filename": "IMG_2900 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2900 Medium.jpeg",
-      "title": "Manuscript Page 8",
-      "description": "Original manuscript page 8 - IMG_2900 Medium.jpeg"
-    },
-    {
-      "id": 9,
-      "filename": "IMG_2901 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2901 Medium.jpeg",
-      "title": "Manuscript Page 9",
-      "description": "Original manuscript page 9 - IMG_2901 Medium.jpeg"
-    },
-    {
-      "id": 10,
-      "filename": "IMG_2902 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2902 Medium.jpeg",
-      "title": "Manuscript Page 10",
-      "description": "Original manuscript page 10 - IMG_2902 Medium.jpeg"
-    },
-    {
-      "id": 11,
-      "filename": "IMG_2903 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2903 Medium.jpeg",
-      "title": "Manuscript Page 11",
-      "description": "Original manuscript page 11 - IMG_2903 Medium.jpeg"
-    },
-    {
-      "id": 12,
-      "filename": "IMG_2904 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2904 Medium.jpeg",
-      "title": "Manuscript Page 12",
-      "description": "Original manuscript page 12 - IMG_2904 Medium.jpeg"
-    },
-    {
-      "id": 13,
-      "filename": "IMG_2905 Medium.jpeg",
-      "url": "/manuscripts/raamraksha/IMG_2905 Medium.jpeg",
-      "title": "Manuscript Page 13",
-      "description": "Original manuscript page 13 - IMG_2905 Medium.jpeg"
+      "id": "raamraksha-02",
+      "title": "Page 2", 
+      "description": "Continuation of Raamraksha Stotra",
+      "filename": "raamraksha-02.jpg",
+      "url": "/manuscripts/raamraksha/raamraksha-02.jpg"
     }
-  ],
-  "generatedAt": "2025-09-07T00:42:41.952Z"
+  ]
 }
