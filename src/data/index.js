@@ -13,6 +13,12 @@ export const collections = [
     filename: 'atharvashirsha-phalashruti.json'
   },
   {
+    id: 'raamraksha',
+    title: 'रामरक्षा',
+    description: 'Sacred protective hymn dedicated to Lord Rama',
+    filename: 'raamraksha.json'
+  },
+  {
     id: 'gayatri',
     title: 'गायत्री मंत्र',
     description: 'The sacred Gayatri Mantra',
@@ -23,12 +29,6 @@ export const collections = [
     title: 'महामृत्युंजय मंत्र',
     description: 'The Great Death-Conquering Mantra',
     filename: 'mahamrityunjaya.json'
-  },
-  {
-    id: 'raamraksha',
-    title: 'रामरक्षा',
-    description: 'Sacred protective hymn dedicated to Lord Rama',
-    filename: 'raamraksha.json'
   }
 ]
 
