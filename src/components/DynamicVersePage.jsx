@@ -259,6 +259,15 @@ const DynamicVersePage = () => {
       <div className="page-container">
         <div className="page-header">
           <Link to="/" className="back-link">← Back to Collections</Link>
+          {hasManuscript && (
+            <Link 
+              to={`/manuscripts/${collectionId}`}
+              className="manuscript-link-top-right"
+              title="View original manuscript"
+            >
+              📜 View Manuscript
+            </Link>
+          )}
           <h1 className="page-title">
             {previousCollection ? (
               <Link to={`/verse/${previousCollection.id}`} className="nav-link prev-link">
@@ -278,15 +287,6 @@ const DynamicVersePage = () => {
           </h1>
           <div className="page-subtitle-container">
             <p className="page-subtitle">Sanskrit Verses with Marathi Translations</p>
-            {hasManuscript && (
-              <Link 
-                to={`/manuscripts/${collectionId}`}
-                className="manuscript-link"
-                title="View original manuscript"
-              >
-                📜 View Manuscript
-              </Link>
-            )}
           </div>
         </div>
         

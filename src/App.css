@@ -33,6 +33,7 @@
   color: white;
   text-align: center;
   padding: 30px 20px;
+  position: relative;
 }
 
 .page-title {
@@ -104,6 +105,30 @@
 }
 
 .manuscript-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.manuscript-link-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.manuscript-link-top-right:hover {
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
   transform: translateY(-2px);
@@ -496,6 +521,17 @@
   
   .marathi-text {
     font-size: 1.1rem;
+  }
+  
+  .manuscript-link-top-right {
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .page-header {
+    padding: 25px 15px;
   }
 }
 
