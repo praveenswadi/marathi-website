@@ -25,7 +25,7 @@ show_usage() {
     echo ""
     echo "Examples:"
     echo "  $0 src/data/atharvashirsha.mp3 src/data/atharvashirsha.json"
-    echo "  $0 src/data/gayatri.m4a src/data/gayatri.json --method silence"
+    echo "  $0 src/data/prarthana.m4a src/data/prarthana.json --method silence"
     echo "  $0 src/data/atharvashirsha.mp3 src/data/atharvashirsha.json --create-timing"
 }
 

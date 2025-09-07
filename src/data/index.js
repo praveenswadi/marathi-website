@@ -19,10 +19,10 @@ export const collections = [
     filename: 'raamraksha.json'
   },
   {
-    id: 'gayatri',
-    title: 'गायत्री मंत्र',
-    description: 'The sacred Gayatri Mantra',
-    filename: 'gayatri.json'
+    id: 'prarthana',
+    title: 'प्रार्थना',
+    description: 'Sacred prayers and devotional hymns',
+    filename: 'prarthana.json'
   },
   {
     id: 'mahamrityunjaya',

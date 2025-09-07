@@ -75,7 +75,7 @@ The timing editor automatically detects collections by looking for:
 Current collections:
 - `atharvashirsha` - Atharvashirsha verses
 - `atharvashirsha-phalashruti` - Atharvashirsha Phalashruti
-- `gayatri` - Gayatri Mantra
+- `prarthana` - Prarthana (Sacred Prayers)
 - `mahamrityunjaya` - Mahamrityunjaya Mantra
 
 ## Output
