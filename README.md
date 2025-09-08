@@ -2,6 +2,10 @@
 
 A comprehensive web application for displaying Sanskrit verses with Marathi translations, featuring audio synchronization, manuscript viewing, and multiple verse collections. The application provides an immersive learning experience with synchronized audio playback, original manuscript viewing, and precise timing controls.
 
+My mother has written down thousands of pages of such wonderful material. This should be saved, published and shared with others. If you find it useful, attribute, acknowledge  and use it.
+
+The conversion to Devanagari script from handwritten notes is done by AI. There are definitely some mistakes and in coming days, I plan to clean it up.
+
 ## Features
 
 ### Core Display Features
