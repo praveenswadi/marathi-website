@@ -24,6 +24,54 @@
       "english": "May the three types of afflictions be pacified (destroyed). The three types of afflictions are - mental (Adhyatmik); those caused by living beings and the five elements (Adhibhautik); and those caused by divine forces and spells (Adhidaivik).",
       "explanation": "",
       "color": "purple"
+    },
+    {
+      "id": 4,
+      "sanskrit": "ॐ भूर्भुवः स्वः । तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि । धियो यो नः प्रचोदयात् ॥",
+      "marathi": "सूर्यातील्या ज्योतिने (भर्गो देवस्य धीमहि) पूर्ण भुवन स्वर्ग या शाश्वती मंत्राच्या प्रभावाने एकाग्रचित्त प्रणाम २४ अक्षरांच्या पुढील मंत्राच्या एतदर्थ ९० ते १२ वेळा करतात. या ज्योतिने प्रेरणा बुद्धि = धियः या तीन लोकांनी प्रकाशार्थ क रणोच्या सुसंवेदनेचे स्थान आहे.",
+      "english": "Om Bhur Bhuvah Svah. We meditate on the divine light of the Sun God, which illuminates the three worlds (Bhur, Bhuvah, Svah). May that divine light inspire and guide our intellect and thoughts.",
+      "explanation": "[तत् +सवितुः +वरेण्यं] गायत्री मंत्राच्या छंदात स्वलेखा मंत्र, म्हणून गायत्रीमंत्र म्हणतात. हि मंत्रपूर्वक देवाची प्रार्थना म्हणून 'गायत्री' म्हणा गेली. हि मंत्रपूर्वक देवाची प्रार्थना म्हणून 'गायत्री' म्हणा गेली.",
+      "color": "purple"
+    },
+    {
+      "id": 5,
+      "sanskrit": "या कुन्देन्दुतुषारहारधवला या शुब्रवस्त्रावृता । या वीणावरदण्डमण्डितकरा या श्वेतपद्मासना ॥ या ब्रह्माच्युतशंकरप्रभृतिभिर्देवैः सदा वन्दिता । सा मां पातु सरस्वती भगवती निःशेषजाड्यापहा ॥",
+      "marathi": "जी कुंदपुष्पध्वनिह हिम मुक्ताहारे धवळी आहे, जी श्वेतवस्त्र परिधान (आवृता) केलेली आहे, जिच्या हातात वीणादंड (वीणावरदण्डमण्डितकरा) शोभतो आहे, जी श्वेतकमळावर बसलेली (श्वेतपद्मासना) आहे, जी ब्रह्मा विष्णू शिव (अच्युत) उपासना (प्रभृतिभिः) देव शिला सदा वंदन करतात न जी संपूर्ण डाळण दूर करण्यासाठी आहे, सशी (सा) ती भगवती सरस्वती माझे (मां) रक्षण (पातु) करो.",
+      "english": "She who is white like jasmine, moon, snow and pearl garland, who is clothed in white garments, whose hands are adorned with the veena, who sits on a white lotus, who is always worshipped by Brahma, Vishnu, Shiva and other gods, may that Goddess Saraswati, who removes all ignorance, protect me.",
+      "explanation": "[कुन्देन्दुतुषारहार = कुन्द +इन्दु +तुषार +हार] [निःशेषजाड्यापहा = निः +शेष +जाड्या +अपहा] अनुष्टुप् छंदात् दूर करणे",
+      "color": "purple"
+    },
+    {
+      "id": 6,
+      "sanskrit": "सर्वे राष्ट्रीयजनमंगलं हृदा सुप्रीतिमन्तः । मैत्रीहेतुर्णं जडायुषेणं सुप्रीतिसंभाषणम् ॥ नलोनिदेशन् सर्वत्र तरणं लंकापुरीदहनम् । पञ्चाग्निराधनं कुम्भकर्णमननं एतत् हि रामायणम् ॥",
+      "marathi": "'रामायण' योऽयमात् एकोऽशोकान् धर्मः → प्रथम (श्लोक) सुवर्णमृगाचे शरे कृत रामाचे तपो वनवासे जाणे, सीतेचे अपहरण, जटायुचे मरण, सुग्रीवाशी मैत्री, वालीची वधा, अशोक वन तरण, लंकाचे जाळणे, नेतरे रावण व कुंभकर्ण आणा आरे करणे, हेच रामायण होय.",
+      "english": "The Ramayana encompasses all these events: Rama's exile to the forest following the golden deer, Sita's abduction, Jatayu's death, friendship with Sugriva, Vali's killing, crossing the ocean, burning of Lanka, and the killing of Ravana and Kumbhakarna - this is the essence of Ramayana.",
+      "explanation": "[पृष्ठात् +रावणं]",
+      "color": "purple"
+    },
+    {
+      "id": 7,
+      "sanskrit": "विद्यानां नरस्य रूपमधिकं प्रच्छन्नगुप्तं धनम् । विद्या भोगकरी यशः सुखकरी विद्या गुरूणां गुरुः ॥ विद्या बन्धुजनो विदेशगमने विद्या परा देवता । विद्या राजसु पूज्यते न हि धनं विद्याविहीनः पशुः ॥",
+      "marathi": "विद्या नराचे मनुष्याचे खरेखुरे धन आहे व लपवलेले (प्रच्छन्न) गुप्त धन आहे. विद्या ही सुभोगाच्या वस्तू, यशा पाचक कर्ता देणारी आहे. तसेच विद्या ही श्रेष्ठ देवता आहे. राजेलोकांमध्ये विद्वान पूजा होते (अमहत्व), धनाची पूजा नाही (न हि). विद्याविहीन मनुष्य हा पशू शेषाच.",
+      "english": "Knowledge is the true and hidden wealth of a person. Knowledge brings enjoyment and fame, knowledge is the teacher of teachers. Knowledge is a friend in foreign lands, knowledge is the supreme deity. Among kings, the learned are worshipped, not wealth. A person without knowledge is like an animal.",
+      "explanation": "भर्तृहरी",
+      "color": "purple"
+    },
+    {
+      "id": 8,
+      "sanskrit": "ईशा वास्यमिदं सर्वं यत्किञ्चित् जगत्यां जगत् । तेन त्यक्तेन भुञ्जीथाः मा गृधः कस्यस्विद्धनम् ॥",
+      "marathi": "जगात (जगत्यां) जे काही स्थिरस्वर आहे (अशांत), त्यात ईश्वराचा (ईश्वर) वास वास्तव आहे (त्यात ईश्वर भरून राहिला आहे). ईश्वरापण करण्याच्या बुद्धीने) सामच्यासह सोगपूर्वक तू उपभोग घे (सेतकेन भुञ्जीथाः). कोणाच्याही (कर्मशक्ति) धनाचा लोभ करू नकोस (मा गृध्यः). [आहे ते ईश्वराचे या वृत्तीने आत्मस्थ तेवढेन भोगीने. हीच नशावी.]",
+      "english": "All this, whatever exists in this changing world, is pervaded by the Lord. Enjoy life through renunciation and detachment. Do not covet anyone's wealth.",
+      "explanation": "[आहे ते ईश्वराचे या वृत्तीने आत्मस्थ तेवढेन भोगीने. हीच नशावी.]",
+      "color": "purple"
+    },
+    {
+      "id": 9,
+      "sanskrit": "पश्येम शरदः शतं जीवेम शरदः शतम् । नन्दाम शरदः शतं मोदाम शरदः शतम् । अदीनाः स्याम शरदः शतं भूयश्च शरदः शतम् ॥",
+      "marathi": "[वृद्धोत्तम दुर्बलं यर्वी' शब्द गणरत्नो. पूर्वी शरद् ऋतुदर्शन काळ भोजन असत. शरदः शतम् म्हणजे सौ वर्षे नव्हे'] सुयोदेवाच्या प्रसादाने आपली आयुर्वेदी (शरद्) नवे (आयुर्वेदी प्रसाद) हाड पावत असावे. शरद् वर्षे नवे (एकार्थ) शरद् वर्षे भावी (मोदाम). शरद् वर्षे भावी (अदीनाः) असावे, शुंकेवाच्या प्रसादाने आपली आयुर्वेदी (भूयश्च) काळ अमही (स्याम) जिवंत असावे. शोभर वर्षे कानाची धड एकार्थ. शोभर वर्षे वचिने धड बोलत उरसावे (प्रब्रवाम). शोभर वर्षे भक्ती देन्यशीन (अदीनाः) असावे, शुंकेवाच्या नरे तरे शोभर वर्षांची (शतम्) आधिक (भूयः) काळ आमही (स्याम) जिवंत असावे.",
+      "english": "May we see a hundred autumns, may we live a hundred autumns, may we rejoice for a hundred autumns, may we be happy for a hundred autumns. May we be free from dependence for a hundred autumns, and may we live even more than a hundred autumns.",
+      "explanation": "शुक्लयजुर्वेद [उद्योगे = दीन +सत्त्व (दैवत्व नसावे)]",
+      "color": "purple"
     }
   ]
 }
