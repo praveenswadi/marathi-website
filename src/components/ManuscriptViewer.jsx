@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { getCollectionById } from '../data/index'
+import { useDeviceDetection } from '../utils/useDeviceDetection'
 import './ManuscriptViewer.css'
 
 const ManuscriptViewer = () => {
@@ -13,6 +14,9 @@ const ManuscriptViewer = () => {
   const [showHint, setShowHint] = useState(true)
   const [zoomMode, setZoomMode] = useState('fit-screen') // 'fit-screen' or 'fit-width'
   const [showZoomIndicator, setShowZoomIndicator] = useState(false)
+  
+  // Device detection
+  const isMobile = useDeviceDetection()
 
   useEffect(() => {
     const loadManifest = async () => {
@@ -215,91 +219,9 @@ const ManuscriptViewer = () => {
 
   const currentImage = manifest.images[currentIndex]
 
-  return (
-    <>
-      {/* Desktop/Tablet View */}
-      <div className="manuscript-viewer">
-        <div className="manuscript-header">
-          <Link to="/" className="back-link">← Back to Collections</Link>
-          <h1 className="manuscript-title">{manifest.title}</h1>
-          <div className="manuscript-info">
-            <span className="page-counter">
-              {currentIndex + 1} of {manifest.images.length}
-            </span>
-          </div>
-        </div>
-
-        <div className="manuscript-container">
-          <div className="manuscript-controls">
-            <button 
-              className="nav-button prev-button" 
-              onClick={prevImage}
-              disabled={currentIndex === 0}
-              title="Previous page (←)"
-            >
-              ←
-            </button>
-            
-            <div className="image-title-section">
-              <h3 className="image-title">{currentImage.title}</h3>
-              <p className="image-description">{currentImage.description}</p>
-              <p className="image-filename">{currentImage.filename}</p>
-            </div>
-            
-            <div className="image-container">
-              <img
-                src={currentImage.url}
-                alt={currentImage.title}
-                className="manuscript-image"
-                onError={(e) => {
-                  e.target.style.display = 'none'
-                  e.target.nextSibling.style.display = 'block'
-                }}
-              />
-              <div className="image-error" style={{ display: 'none' }}>
-                <p>Image could not be loaded</p>
-                <p>{currentImage.filename}</p>
-              </div>
-            </div>
-            
-            <button 
-              className="nav-button next-button" 
-              onClick={nextImage}
-              disabled={currentIndex === manifest.images.length - 1}
-              title="Next page (→)"
-            >
-              →
-            </button>
-          </div>
-
-          <div className="manuscript-thumbnails">
-            {manifest.images.map((image, index) => (
-              <button
-                key={image.id}
-                className={`thumbnail ${index === currentIndex ? 'active' : ''}`}
-                onClick={() => goToImage(index)}
-                title={`Go to page ${index + 1}`}
-              >
-                <img
-                  src={image.url}
-                  alt={image.title}
-                  className="thumbnail-image"
-                />
-                <span className="thumbnail-number">{index + 1}</span>
-              </button>
-            ))}
-          </div>
-
-        </div>
-
-        <div className="manuscript-footer">
-          <div className="keyboard-shortcuts">
-            <p>Keyboard shortcuts: ← → (navigate), Esc (close)</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Full-Screen Swipe View */}
+  // Render mobile version
+  if (isMobile) {
+    return (
       <div className="mobile-manuscript-viewer">
         <div 
           className={`mobile-manuscript-container ${zoomMode}`}
@@ -359,7 +281,91 @@ const ManuscriptViewer = () => {
           )}
         </div>
       </div>
-    </>
+    )
+  }
+
+  // Render desktop version
+  return (
+    <div className="manuscript-viewer">
+      <div className="manuscript-header">
+        <Link to="/" className="back-link">← Back to Collections</Link>
+        <h1 className="manuscript-title">{manifest.title}</h1>
+        <div className="manuscript-info">
+          <span className="page-counter">
+            {currentIndex + 1} of {manifest.images.length}
+          </span>
+        </div>
+      </div>
+
+      <div className="manuscript-container">
+        <div className="manuscript-controls">
+          <button 
+            className="nav-button prev-button" 
+            onClick={prevImage}
+            disabled={currentIndex === 0}
+            title="Previous page (←)"
+          >
+            ←
+          </button>
+          
+          <div className="image-title-section">
+            <h3 className="image-title">{currentImage.title}</h3>
+            <p className="image-description">{currentImage.description}</p>
+            <p className="image-filename">{currentImage.filename}</p>
+          </div>
+          
+          <div className="image-container">
+            <img
+              src={currentImage.url}
+              alt={currentImage.title}
+              className="manuscript-image"
+              onError={(e) => {
+                e.target.style.display = 'none'
+                e.target.nextSibling.style.display = 'block'
+              }}
+            />
+            <div className="image-error" style={{ display: 'none' }}>
+              <p>Image could not be loaded</p>
+              <p>{currentImage.filename}</p>
+            </div>
+          </div>
+          
+          <button 
+            className="nav-button next-button" 
+            onClick={nextImage}
+            disabled={currentIndex === manifest.images.length - 1}
+            title="Next page (→)"
+          >
+            →
+          </button>
+        </div>
+
+        <div className="manuscript-thumbnails">
+          {manifest.images.map((image, index) => (
+            <button
+              key={image.id}
+              className={`thumbnail ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => goToImage(index)}
+              title={`Go to page ${index + 1}`}
+            >
+              <img
+                src={image.url}
+                alt={image.title}
+                className="thumbnail-image"
+              />
+              <span className="thumbnail-number">{index + 1}</span>
+            </button>
+          ))}
+        </div>
+
+      </div>
+
+      <div className="manuscript-footer">
+        <div className="keyboard-shortcuts">
+          <p>Keyboard shortcuts: ← → (navigate), Esc (close)</p>
+        </div>
+      </div>
+    </div>
   )
 }
 

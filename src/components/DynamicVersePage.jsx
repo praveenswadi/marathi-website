@@ -4,6 +4,7 @@ import { getCollectionById, getPreviousCollection, getNextCollection } from '../
 import { loadCollectionData } from '../data/loader'
 import { hasAudioForVerse, hasAudioForCollection } from '../utils/audioUtils'
 import { hasManuscripts } from '../utils/manuscriptUtils'
+import { useDeviceDetection } from '../utils/useDeviceDetection'
 import AudioPlayer from './AudioPlayer'
 import '../App.css'
 
@@ -19,6 +20,9 @@ const DynamicVersePage = () => {
   const [nextVerseToPlay, setNextVerseToPlay] = useState(0)
   const [hasManuscript, setHasManuscript] = useState(false)
   const [activeTab, setActiveTab] = useState('sanskrit')
+  
+  // Device detection
+  const isMobile = useDeviceDetection()
   
   // Get navigation collections
   const previousCollection = getPreviousCollection(collectionId)
@@ -255,6 +259,123 @@ const DynamicVersePage = () => {
     )
   }
 
+  // Render mobile version
+  if (isMobile) {
+    return (
+      <div className="App">
+        <div className="page-container">
+          <div className="page-header">
+            <Link to="/" className="back-link">← Back to Collections</Link>
+            {hasManuscript && (
+              <Link 
+                to={`/manuscripts/${collectionId}`}
+                className="manuscript-link-top-right"
+                title="View original manuscript"
+              >
+                📜 View Manuscript
+              </Link>
+            )}
+            <h1 className="page-title">
+              {previousCollection ? (
+                <Link to={`/verse/${previousCollection.id}`} className="nav-link prev-link">
+                  ← {previousCollection.title}
+                </Link>
+              ) : (
+                <span className="nav-link disabled">←</span>
+              )}
+              <span className="current-title"> {data.title} </span>
+              {nextCollection ? (
+                <Link to={`/verse/${nextCollection.id}`} className="nav-link next-link">
+                  {nextCollection.title} →
+                </Link>
+              ) : (
+                <span className="nav-link disabled">→</span>
+              )}
+            </h1>
+            <div className="page-subtitle-container">
+              <p className="page-subtitle">Sanskrit Verses with Marathi Translations</p>
+            </div>
+          </div>
+          
+          {/* Mobile Tabbed View */}
+          <div className="mobile-tab-nav">
+            <div className="mobile-tab-buttons">
+              <button 
+                className={`mobile-tab-button ${activeTab === 'sanskrit' ? 'active' : ''}`}
+                onClick={() => setActiveTab('sanskrit')}
+              >
+                श्लोक
+              </button>
+              <button 
+                className={`mobile-tab-button ${activeTab === 'marathi' ? 'active' : ''}`}
+                onClick={() => setActiveTab('marathi')}
+              >
+                श्लोकार्थ
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Sanskrit Content */}
+          <div className={`mobile-flowing-content ${activeTab === 'sanskrit' ? 'active' : ''}`}>
+            {hasAudioForCollection(collectionId) && (
+              <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+                <button 
+                  className={`listen-all-btn ${isPlayingAll ? (isPaused ? 'paused' : 'playing') : ''}`}
+                  onClick={handleListenToAll}
+                  title={
+                    isPlayingAll 
+                      ? (isPaused ? 'Resume playing all verses' : 'Pause playing all verses')
+                      : 'Play all verses sequentially'
+                  }
+                >
+                  {isPlayingAll 
+                    ? (isPaused ? '▶️ Resume All' : '⏸️ Pause All')
+                    : '▶️ Listen to All'
+                  }
+                </button>
+              </div>
+            )}
+            {data.verses.map((verse) => (
+              <div 
+                key={`mobile-sanskrit-${verse.id}`}
+                className={`mobile-flowing-verse ${playingVerse === verse.id ? 'currently-playing' : ''}`}
+                data-verse-id={verse.id}
+              >
+                {hasAudioForVerse(collectionId, verse.id) && (
+                  <div className="mobile-verse-audio">
+                    <AudioPlayer 
+                      verseId={verse.id}
+                      isPlaying={playingVerse === verse.id}
+                      onToggle={handleToggle}
+                    />
+                  </div>
+                )}
+                <div className={`mobile-sanskrit-text ${verse.color || 'purple'}`}>
+                  {verse.sanskrit}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Marathi Content */}
+          <div className={`mobile-flowing-content ${activeTab === 'marathi' ? 'active' : ''}`}>
+            {data.verses.map((verse) => (
+              <div 
+                key={`mobile-marathi-${verse.id}`}
+                className="mobile-flowing-verse"
+              >
+                <div className="mobile-marathi-text">
+                  {verse.marathi}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Render desktop version
   return (
     <div className="App">
       <div className="page-container">
@@ -364,80 +485,6 @@ const DynamicVersePage = () => {
                 <div className="marathi-text">
                   {verse.marathi}
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile Tabbed View */}
-        <div className="mobile-tab-nav">
-          <div className="mobile-tab-buttons">
-            <button 
-              className={`mobile-tab-button ${activeTab === 'sanskrit' ? 'active' : ''}`}
-              onClick={() => setActiveTab('sanskrit')}
-            >
-              श्लोक
-            </button>
-            <button 
-              className={`mobile-tab-button ${activeTab === 'marathi' ? 'active' : ''}`}
-              onClick={() => setActiveTab('marathi')}
-            >
-              श्लोकार्थ
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Sanskrit Content */}
-        <div className={`mobile-flowing-content ${activeTab === 'sanskrit' ? 'active' : ''}`}>
-          {hasAudioForCollection(collectionId) && (
-            <div style={{ marginBottom: '20px', textAlign: 'center' }}>
-              <button 
-                className={`listen-all-btn ${isPlayingAll ? (isPaused ? 'paused' : 'playing') : ''}`}
-                onClick={handleListenToAll}
-                title={
-                  isPlayingAll 
-                    ? (isPaused ? 'Resume playing all verses' : 'Pause playing all verses')
-                    : 'Play all verses sequentially'
-                }
-              >
-                {isPlayingAll 
-                  ? (isPaused ? '▶️ Resume All' : '⏸️ Pause All')
-                  : '▶️ Listen to All'
-                }
-              </button>
-            </div>
-          )}
-          {data.verses.map((verse) => (
-            <div 
-              key={`mobile-sanskrit-${verse.id}`}
-              className={`mobile-flowing-verse ${playingVerse === verse.id ? 'currently-playing' : ''}`}
-              data-verse-id={verse.id}
-            >
-              {hasAudioForVerse(collectionId, verse.id) && (
-                <div className="mobile-verse-audio">
-                  <AudioPlayer 
-                    verseId={verse.id}
-                    isPlaying={playingVerse === verse.id}
-                    onToggle={handleToggle}
-                  />
-                </div>
-              )}
-              <div className={`mobile-sanskrit-text ${verse.color || 'purple'}`}>
-                {verse.sanskrit}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile Marathi Content */}
-        <div className={`mobile-flowing-content ${activeTab === 'marathi' ? 'active' : ''}`}>
-          {data.verses.map((verse) => (
-            <div 
-              key={`mobile-marathi-${verse.id}`}
-              className="mobile-flowing-verse"
-            >
-              <div className="mobile-marathi-text">
-                {verse.marathi}
               </div>
             </div>
           ))}
