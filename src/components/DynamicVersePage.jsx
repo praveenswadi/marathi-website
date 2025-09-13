@@ -297,7 +297,6 @@ const DynamicVersePage = () => {
               )}
             </div>
             
-            <p className="mobile-page-subtitle">Sanskrit Verses with Marathi Translations</p>
           </div>
           
           {/* Mobile Tabbed View */}
@@ -410,9 +409,6 @@ const DynamicVersePage = () => {
               <span className="nav-link disabled">→</span>
             )}
           </h1>
-          <div className="page-subtitle-container">
-            <p className="page-subtitle">Sanskrit Verses with Marathi Translations</p>
-          </div>
         </div>
         
         {/* Desktop/Tablet View */}
