@@ -18,6 +18,7 @@ const DynamicVersePage = () => {
   const [currentPlayingIndex, setCurrentPlayingIndex] = useState(0)
   const [nextVerseToPlay, setNextVerseToPlay] = useState(0)
   const [hasManuscript, setHasManuscript] = useState(false)
+  const [activeTab, setActiveTab] = useState('sanskrit')
   
   // Get navigation collections
   const previousCollection = getPreviousCollection(collectionId)
@@ -290,6 +291,7 @@ const DynamicVersePage = () => {
           </div>
         </div>
         
+        {/* Desktop/Tablet View */}
         <div className="verses-container">
           {/* Sticky Column Headers */}
           <div className="sticky-headers">
@@ -362,6 +364,80 @@ const DynamicVersePage = () => {
                 <div className="marathi-text">
                   {verse.marathi}
                 </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Tabbed View */}
+        <div className="mobile-tab-nav">
+          <div className="mobile-tab-buttons">
+            <button 
+              className={`mobile-tab-button ${activeTab === 'sanskrit' ? 'active' : ''}`}
+              onClick={() => setActiveTab('sanskrit')}
+            >
+              श्लोक
+            </button>
+            <button 
+              className={`mobile-tab-button ${activeTab === 'marathi' ? 'active' : ''}`}
+              onClick={() => setActiveTab('marathi')}
+            >
+              श्लोकार्थ
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Sanskrit Content */}
+        <div className={`mobile-flowing-content ${activeTab === 'sanskrit' ? 'active' : ''}`}>
+          {hasAudioForCollection(collectionId) && (
+            <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+              <button 
+                className={`listen-all-btn ${isPlayingAll ? (isPaused ? 'paused' : 'playing') : ''}`}
+                onClick={handleListenToAll}
+                title={
+                  isPlayingAll 
+                    ? (isPaused ? 'Resume playing all verses' : 'Pause playing all verses')
+                    : 'Play all verses sequentially'
+                }
+              >
+                {isPlayingAll 
+                  ? (isPaused ? '▶️ Resume All' : '⏸️ Pause All')
+                  : '▶️ Listen to All'
+                }
+              </button>
+            </div>
+          )}
+          {data.verses.map((verse) => (
+            <div 
+              key={`mobile-sanskrit-${verse.id}`}
+              className={`mobile-flowing-verse ${playingVerse === verse.id ? 'currently-playing' : ''}`}
+              data-verse-id={verse.id}
+            >
+              {hasAudioForVerse(collectionId, verse.id) && (
+                <div className="mobile-verse-audio">
+                  <AudioPlayer 
+                    verseId={verse.id}
+                    isPlaying={playingVerse === verse.id}
+                    onToggle={handleToggle}
+                  />
+                </div>
+              )}
+              <div className={`mobile-sanskrit-text ${verse.color || 'purple'}`}>
+                {verse.sanskrit}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Marathi Content */}
+        <div className={`mobile-flowing-content ${activeTab === 'marathi' ? 'active' : ''}`}>
+          {data.verses.map((verse) => (
+            <div 
+              key={`mobile-marathi-${verse.id}`}
+              className="mobile-flowing-verse"
+            >
+              <div className="mobile-marathi-text">
+                {verse.marathi}
               </div>
             </div>
           ))}

@@ -490,48 +490,142 @@
   display: none;
 }
 
+/* Mobile Tab Navigation */
+.mobile-tab-nav {
+  display: none;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-tab-buttons {
+  display: flex;
+  width: 100%;
+}
+
+.mobile-tab-button {
+  flex: 1;
+  padding: 15px 10px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.mobile-tab-button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+  background: rgba(102, 126, 234, 0.05);
+}
+
+.mobile-tab-button:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.mobile-flowing-content {
+  display: none;
+  padding: 15px;
+  line-height: 2;
+  background: #fefcf5;
+  min-height: calc(100vh - 200px);
+}
+
+.mobile-flowing-content.active {
+  display: block;
+}
+
+.mobile-flowing-verse {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+.mobile-flowing-verse.currently-playing {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.mobile-verse-audio {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+.mobile-sanskrit-text {
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #8e44ad;
+  display: inline;
+  font-weight: 400;
+  text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-marathi-text {
+  font-family: 'Tiro Devanagari Marathi', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #2980b9;
+  display: inline;
+  font-weight: 400;
+  text-shadow: 0.3px 0.3px 0px rgba(0, 0, 0, 0.05);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .App {
+    padding: 0;
+  }
+  
+  .page-container {
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+  
   .sticky-headers {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    text-align: center;
-  }
-  
-  .sticky-header-center {
-    order: -1;
-  }
-  
-  .verse-item {
-    grid-template-columns: 1fr !important;
-    gap: 20px;
-  }
-  
-  .page-title {
-    font-size: 2rem;
+    display: none;
   }
   
   .verses-container {
-    padding: 20px;
+    display: none;
   }
   
-  .sanskrit-text {
-    font-size: 1.2rem;
+  .mobile-tab-nav {
+    display: block;
   }
   
-  .marathi-text {
-    font-size: 1.1rem;
+  .page-title {
+    font-size: 1.8rem;
   }
   
   .manuscript-link-top-right {
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     padding: 6px 12px;
     font-size: 0.8rem;
   }
   
   .page-header {
-    padding: 25px 15px;
+    padding: 20px 10px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  
+  .current-title {
+    font-size: 1.8rem;
   }
 }
 
