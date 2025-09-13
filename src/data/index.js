@@ -23,12 +23,6 @@ export const collections = [
     title: 'प्रार्थना',
     description: 'Sacred prayers and devotional hymns',
     filename: 'prarthana.json'
-  },
-  {
-    id: 'mahamrityunjaya',
-    title: 'महामृत्युंजय मंत्र',
-    description: 'The Great Death-Conquering Mantra',
-    filename: 'mahamrityunjaya.json'
   }
 ]
 

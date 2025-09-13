@@ -95,7 +95,6 @@ The application includes multiple Sanskrit verse collections, each with their ow
 - **अथर्वशीर्षाची फलश्रुति (Atharvashirsha Phalashruti)**: Benefits of reciting Atharvashirsha
 - **रामरक्षा (Raamraksha)**: Sacred protective hymn dedicated to Lord Rama
 - **प्रार्थना (Prarthana)**: Sacred prayers and devotional hymns
-- **महामृत्युंजय मंत्र (Mahamrityunjaya)**: The Great Death-Conquering Mantra
 
 ### Data Structure
 Each collection consists of:

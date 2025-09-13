@@ -25,8 +25,7 @@ const TimingEditor = () => {
         const jsonFiles = [
           'atharvashirsha.json',
           'atharvashirsha-phalashruti.json', 
-          'prarthana.json',
-          'mahamrityunjaya.json'
+          'prarthana.json'
         ]
         
         const collections = []

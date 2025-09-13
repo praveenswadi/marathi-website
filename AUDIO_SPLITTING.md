@@ -76,7 +76,6 @@ Current collections:
 - `atharvashirsha` - Atharvashirsha verses
 - `atharvashirsha-phalashruti` - Atharvashirsha Phalashruti
 - `prarthana` - Prarthana (Sacred Prayers)
-- `mahamrityunjaya` - Mahamrityunjaya Mantra
 
 ## Output
 
