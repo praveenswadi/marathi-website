@@ -18,6 +18,40 @@ The conversion to Devanagari script from handwritten notes is done by AI. There 
 - **Print-friendly**: Optimized for printing
 - **Devanagari font support**: Uses Noto Sans Devanagari for proper rendering
 
+### 📱 Complete Mobile Optimization Package
+
+#### **Verse Pages - Tabbed Interface**
+- **Sanskrit/Marathi tabs**: Clean tabbed interface for mobile devices
+- **Flowing text layout**: Optimized for singing and recitation without card separations
+- **Zero wasted space**: Removed excessive padding and margins for maximum content area
+- **Orientation-independent**: Consistent mobile experience in both portrait and landscape modes
+- **Touch-optimized**: Large tap targets and smooth tab switching
+- **Audio integration**: Full audio functionality preserved in tabbed interface
+
+#### **Manuscript Pages - Full-Screen Experience**
+- **Immersive viewing**: Full-screen manuscript display with no UI clutter
+- **Swipe navigation**: Natural left/right swipe gestures to navigate between pages
+- **Double-tap zoom**: Toggle between two viewing modes:
+  - 🔍 **Overview Mode**: Fit-to-screen for navigation and context
+  - 📖 **Reading Mode**: Fit-to-width for detailed study with vertical scrolling
+- **Auto-hiding overlay**: Minimal controls (back button, page counter) that auto-hide after 3 seconds
+- **Visual feedback**: Clear indicators when switching between zoom modes
+- **Touch areas**: Left/right edge taps for alternative navigation
+- **Smooth transitions**: CSS-based animations for natural interactions
+
+#### **Smart Device Detection**
+- **Touch-first approach**: Uses `(hover: none) and (pointer: coarse)` to detect mobile devices
+- **Orientation-independent**: Works perfectly in both portrait and landscape orientations
+- **Fallback support**: Dimension-based detection for older browsers
+- **Desktop preservation**: Desktop experience remains completely unchanged
+
+#### **User Experience Enhancements**
+- **Intuitive gestures**: Swipe, double-tap, scroll, and tap interactions
+- **Helpful hints**: On-screen guidance for new users with auto-hide functionality
+- **Performance optimized**: Image preloading for smooth navigation
+- **Distraction-free**: Clean interfaces focused on content consumption
+- **Accessibility**: Touch-friendly controls with proper sizing and feedback
+
 ### Audio Features
 - **Synchronized audio playback**: Click-to-play individual verses with precise timing
 - **Multiple audio formats**: Supports MP3, M4A, WAV, OGG, and AAC
@@ -83,12 +117,15 @@ To add a new collection:
 - User progress tracking and bookmarks
 - Interactive learning features and quizzes
 - Export functionality for verses and audio
-- Mobile app version
 - Offline support with service workers
+- Advanced manuscript annotations and highlighting
+- Multi-language support for translations
 
 ## TODO
 
-- **Fix sticky headers**: The column headers ("श्लोक" and "श्लोकार्थ") should remain fixed at the top when scrolling, but currently they scroll away with the content. Need to investigate CSS positioning issues.
+- **Search functionality**: Implement search across verses and collections
+- **User preferences**: Save user settings like preferred zoom mode, tab selection
+- **Performance monitoring**: Add analytics for mobile gesture usage and performance
 
 ## Technology Stack
 
