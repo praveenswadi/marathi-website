@@ -264,37 +264,40 @@ const DynamicVersePage = () => {
     return (
       <div className="App">
         <div className="page-container">
-          <div className="page-header">
-            <Link to="/" className="back-link">← Back to Collections</Link>
-            {hasManuscript && (
-              <Link 
-                to={`/manuscripts/${collectionId}`}
-                className="manuscript-link-top-right"
-                title="View original manuscript"
-              >
-                📜 View Manuscript
-              </Link>
-            )}
-            <h1 className="page-title">
+          <div className="mobile-page-header">
+            <div className="mobile-header-top">
+              <Link to="/" className="mobile-back-link">← Back to Collections</Link>
+              {hasManuscript && (
+                <Link 
+                  to={`/manuscripts/${collectionId}`}
+                  className="mobile-manuscript-link"
+                  title="View original manuscript"
+                >
+                  📜 Manuscript
+                </Link>
+              )}
+            </div>
+            
+            <h1 className="mobile-page-title">{data.title}</h1>
+            
+            <div className="mobile-nav-section">
               {previousCollection ? (
-                <Link to={`/verse/${previousCollection.id}`} className="nav-link prev-link">
+                <Link to={`/verse/${previousCollection.id}`} className="mobile-nav-link prev-link">
                   ← {previousCollection.title}
                 </Link>
               ) : (
-                <span className="nav-link disabled">←</span>
+                <span className="mobile-nav-link disabled">←</span>
               )}
-              <span className="current-title"> {data.title} </span>
               {nextCollection ? (
-                <Link to={`/verse/${nextCollection.id}`} className="nav-link next-link">
+                <Link to={`/verse/${nextCollection.id}`} className="mobile-nav-link next-link">
                   {nextCollection.title} →
                 </Link>
               ) : (
-                <span className="nav-link disabled">→</span>
+                <span className="mobile-nav-link disabled">→</span>
               )}
-            </h1>
-            <div className="page-subtitle-container">
-              <p className="page-subtitle">Sanskrit Verses with Marathi Translations</p>
             </div>
+            
+            <p className="mobile-page-subtitle">Sanskrit Verses with Marathi Translations</p>
           </div>
           
           {/* Mobile Tabbed View */}

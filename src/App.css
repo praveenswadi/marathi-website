@@ -580,7 +580,106 @@
   text-shadow: 0.3px 0.3px 0px rgba(0, 0, 0, 0.05);
 }
 
-/* Mobile styles are now applied via conditional rendering in React components */
+/* Mobile-specific header styles for conditional rendering */
+.mobile-page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px 10px;
+  position: relative;
+}
+
+.mobile-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  min-height: 40px;
+}
+
+.mobile-back-link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.mobile-back-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-manuscript-link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.mobile-manuscript-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-page-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.mobile-nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mobile-nav-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mobile-nav-link.disabled {
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}
+
+.mobile-current-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.mobile-page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
 
 /* Loading and Error States */
 .loading-container {
