@@ -27,7 +27,7 @@ const HomePage = () => {
       </div>
       
       <div className="collections-grid">
-        {collections.map((collection) => (
+        {collections.filter(collection => collection.category === 'sanskrit').map((collection) => (
           <Link 
             key={collection.id} 
             to={`/verse/${collection.id}`}
@@ -58,7 +58,7 @@ const HomePage = () => {
         <h2 className="administration-title">मराठी आरत्या आणि स्तोत्रे</h2>
         <div className="administration-grid">
           {collections
-            .filter(collection => collection.id === 'mahalakshmi-aarti')
+            .filter(collection => collection.category === 'marathi')
             .map((collection) => (
               <Link 
                 key={collection.id} 

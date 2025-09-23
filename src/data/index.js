@@ -4,31 +4,36 @@ export const collections = [
     id: 'mahalakshmi-aarti',
     title: 'महालक्ष्मी आरती',
     description: 'Traditional Marathi aarti dedicated to Goddess Mahalakshmi',
-    filename: 'mahalakshmi-aarti.json'
+    filename: 'mahalakshmi-aarti.json',
+    category: 'marathi'
   },
   {
     id: 'atharvashirsha',
     title: 'अथर्वशीर्ष',
     description: 'Sanskrit verses with Marathi translations',
-    filename: 'atharvashirsha.json'
+    filename: 'atharvashirsha.json',
+    category: 'sanskrit'
   },
   {
     id: 'atharvashirsha-phalashruti',
     title: 'अथर्वशीर्षाची फलश्रुति',
     description: 'Benefits of reciting Atharvashirsha',
-    filename: 'atharvashirsha-phalashruti.json'
+    filename: 'atharvashirsha-phalashruti.json',
+    category: 'sanskrit'
   },
   {
     id: 'raamraksha',
     title: 'रामरक्षा',
     description: 'Sacred protective hymn dedicated to Lord Rama',
-    filename: 'raamraksha.json'
+    filename: 'raamraksha.json',
+    category: 'sanskrit'
   },
   {
     id: 'prarthana',
     title: 'प्रार्थना',
     description: 'Sacred prayers and devotional hymns',
-    filename: 'prarthana.json'
+    filename: 'prarthana.json',
+    category: 'sanskrit'
   }
 ]
 
