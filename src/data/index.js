@@ -1,6 +1,12 @@
 // Data index for all verse collections
 export const collections = [
   {
+    id: 'mahalakshmi-aarti',
+    title: 'महालक्ष्मी आरती',
+    description: 'Traditional Marathi aarti dedicated to Goddess Mahalakshmi',
+    filename: 'mahalakshmi-aarti.json'
+  },
+  {
     id: 'atharvashirsha',
     title: 'अथर्वशीर्ष',
     description: 'Sanskrit verses with Marathi translations',

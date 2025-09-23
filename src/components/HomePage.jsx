@@ -53,6 +53,39 @@ const HomePage = () => {
           </Link>
         ))}
       </div>
+
+      <div className="administration-section">
+        <h2 className="administration-title">मराठी आरत्या आणि स्तोत्रे</h2>
+        <div className="administration-grid">
+          {collections
+            .filter(collection => collection.id === 'mahalakshmi-aarti')
+            .map((collection) => (
+              <Link 
+                key={collection.id} 
+                to={`/verse/${collection.id}`}
+                className="collection-card"
+              >
+                <div className="collection-content">
+                  <h3 className="collection-title">{collection.title}</h3>
+                  <p className="collection-description">{collection.description}</p>
+                  <div className="collection-arrow">→</div>
+                  {manuscriptAvailability[collection.id] && (
+                    <div className="manuscript-link-inline">
+                      <Link 
+                        to={`/manuscripts/${collection.id}`}
+                        className="manuscript-link-simple"
+                        title="View original manuscript"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Manuscript
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </Link>
+            ))}
+        </div>
+      </div>
       
       <div className="administration-section">
         <h2 className="administration-title">Administration</h2>
