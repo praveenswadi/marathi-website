@@ -259,16 +259,28 @@
 }
 
 /* Mobile Full-Screen Swipe Interface */
-.mobile-manuscript-viewer {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000;
-  z-index: 1000;
-  touch-action: pan-x;
+@media (max-width: 1023px) {
+  .mobile-manuscript-viewer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 1000;
+    touch-action: pan-x;
+  }
+
+  .manuscript-viewer {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-manuscript-viewer {
+    display: none;
+  }
 }
 
 .mobile-manuscript-container {
