@@ -14,11 +14,11 @@ export const useDeviceDetection = () => {
       const touchQuery = window.matchMedia('(hover: none) and (pointer: coarse)')
       
       // Fallback method: dimension-based detection
-      const dimensionQuery = window.matchMedia('(max-width: 768px), (max-height: 500px) and (max-width: 1024px)')
+      const dimensionQuery = window.matchMedia('(max-width: 640px)')
       
       // User agent fallback for older browsers
       const userAgent = navigator.userAgent.toLowerCase()
-      const mobileKeywords = ['mobile', 'android', 'iphone', 'ipad', 'ipod', 'blackberry', 'windows phone']
+      const mobileKeywords = ['mobile', 'android', 'iphone', 'ipod', 'blackberry', 'windows phone']
       const isUserAgentMobile = mobileKeywords.some(keyword => userAgent.includes(keyword))
       
       // Determine if mobile: touch query OR dimension query OR user agent
@@ -32,7 +32,7 @@ export const useDeviceDetection = () => {
 
     // Listen for changes (orientation, window resize, etc.)
     const touchQuery = window.matchMedia('(hover: none) and (pointer: coarse)')
-    const dimensionQuery = window.matchMedia('(max-width: 768px), (max-height: 500px) and (max-width: 1024px)')
+    const dimensionQuery = window.matchMedia('(max-width: 640px)')
     
     const handleChange = () => checkDevice()
     

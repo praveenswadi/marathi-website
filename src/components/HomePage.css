@@ -172,7 +172,8 @@
 
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* Mobile devices */
+@media (max-width: 640px) {
   .home-container {
     padding: 20px 15px;
   }
@@ -197,6 +198,17 @@
   
   .collection-title {
     font-size: 1.5rem;
+  }
+}
+
+/* Ensure tablet and larger devices get desktop layout */
+@media (min-width: 641px) {
+  .collections-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  
+  .administration-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
