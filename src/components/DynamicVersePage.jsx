@@ -21,8 +21,17 @@ const DynamicVersePage = () => {
   const [hasManuscript, setHasManuscript] = useState(false)
   const [activeTab, setActiveTab] = useState('sanskrit')
   
-  // Device detection
-  const isMobile = useDeviceDetection()
+  // Device detection - only consider phones as mobile
+  const isMobileDevice = useDeviceDetection()
+  const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 640px)').matches)
+  
+  // Update layout on screen size changes
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
+    const handleResize = (e) => setIsMobile(e.matches)
+    mediaQuery.addEventListener('change', handleResize)
+    return () => mediaQuery.removeEventListener('change', handleResize)
+  }, [])
   
   // Get navigation collections
   const previousCollection = getPreviousCollection(collectionId)
@@ -400,7 +409,7 @@ const DynamicVersePage = () => {
             ) : (
               <span className="nav-link disabled">←</span>
             )}
-            <span className="current-title"> {data.title} </span>
+            <span className="current-title">{data.title}</span>
             {nextCollection ? (
               <Link to={`/verse/${nextCollection.id}`} className="nav-link next-link">
                 {nextCollection.title} →
@@ -442,7 +451,7 @@ const DynamicVersePage = () => {
               ) : (
                 <span className="nav-link disabled">←</span>
               )}
-              <span className="current-title"> {data.title} </span>
+              <span className="current-title">{data.title}</span>
               {nextCollection ? (
                 <Link to={`/verse/${nextCollection.id}`} className="nav-link next-link">
                   {nextCollection.title} →

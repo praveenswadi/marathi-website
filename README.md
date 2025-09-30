@@ -18,9 +18,20 @@ The conversion to Devanagari script from handwritten notes is done by AI. There 
 - **Print-friendly**: Optimized for printing
 - **Devanagari font support**: Uses Noto Sans Devanagari for proper rendering
 
-### 📱 Complete Mobile Optimization Package
+### 📱 Complete Mobile & Tablet Optimization Package
 
-#### **Verse Pages - Tabbed Interface**
+#### **iPad Air-Specific Layout**
+- **Compact Navigation**: Title at top with prev/next links below in a single row
+- **Optimized Header**: Reduced spacing and padding for better screen utilization
+- **Tablet-Friendly Text**: Adjusted font sizes and line heights for readability
+- **Efficient Layout**: Compact sticky headers with proper spacing
+
+#### **Desktop & iPad Pro Layout**
+- **Side Navigation**: Previous and Next links on either side of the title
+- **Spacious Design**: Full-width layout with comfortable spacing
+- **Larger Text**: Optimized font sizes for larger screens
+
+#### **Mobile Verse Pages - Tabbed Interface**
 - **Sanskrit/Marathi tabs**: Clean tabbed interface for mobile devices
 - **Flowing text layout**: Optimized for singing and recitation without card separations
 - **Zero wasted space**: Removed excessive padding and margins for maximum content area
@@ -40,10 +51,14 @@ The conversion to Devanagari script from handwritten notes is done by AI. There 
 - **Smooth transitions**: CSS-based animations for natural interactions
 
 #### **Smart Device Detection**
-- **Touch-first approach**: Uses `(hover: none) and (pointer: coarse)` to detect mobile devices
-- **Orientation-independent**: Works perfectly in both portrait and landscape orientations
+- **Device-Specific Layouts**: Different layouts for:
+  - Desktop & iPad Pro (≥1024px): Side navigation layout
+  - iPad Air (641px-1023px): Compact vertical navigation
+  - Mobile (<640px): Tabbed interface
+- **Touch-first approach**: Uses `(hover: none) and (pointer: coarse)` for mobile detection
+- **Orientation-independent**: Works in both portrait and landscape orientations
 - **Fallback support**: Dimension-based detection for older browsers
-- **Desktop preservation**: Desktop experience remains completely unchanged
+- **Desktop preservation**: Full desktop experience on larger screens
 
 #### **User Experience Enhancements**
 - **Intuitive gestures**: Swipe, double-tap, scroll, and tap interactions
