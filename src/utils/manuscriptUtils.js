@@ -9,7 +9,8 @@ const COLLECTIONS_WITH_MANUSCRIPTS = [
   'atharvashirsha',
   'atharvashirsha-phalashruti', 
   'raamraksha',
-  'prarthana'
+  'prarthana',
+  'mahalakshmi-aarti'
 ]
 
 /**

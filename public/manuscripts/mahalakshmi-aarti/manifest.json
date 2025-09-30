@@ -1,0 +1,22 @@
+{
+  "collection": "mahalakshmi-aarti",
+  "title": "Mahalakshmi-aarti Manuscript Images",
+  "description": "Original manuscript pages for mahalakshmi-aarti",
+  "images": [
+    {
+      "id": 1,
+      "filename": "mahalakshmi-1.jpg",
+      "url": "/manuscripts/mahalakshmi-aarti/mahalakshmi-1.jpg",
+      "title": "Manuscript Page 1",
+      "description": "Original manuscript page 1 - mahalakshmi-1.jpg"
+    },
+    {
+      "id": 2,
+      "filename": "mahalakshmi-2.jpg",
+      "url": "/manuscripts/mahalakshmi-aarti/mahalakshmi-2.jpg",
+      "title": "Manuscript Page 2",
+      "description": "Original manuscript page 2 - mahalakshmi-2.jpg"
+    }
+  ],
+  "generatedAt": "2025-09-30T04:39:10.097Z"
+}
